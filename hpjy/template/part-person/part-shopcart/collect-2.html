@@ -1,0 +1,120 @@
+<ion-view>
+		<!--页头-->
+		<ion-header-bar  class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">我的收藏</h1>
+		</ion-header-bar>
+		<div class="bar bar-subheader">
+			<ul>
+				<li>图书</li>
+				<li  class="on">视频</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<ion-content class="has-header has-subheader" style="background: #F1EFF8;">
+			<ion-list>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book19.png">
+					<p>专业手绘插画一对一视频教程细节化专业化绘图基本准则</p>
+					<span class="ss">
+						<span class="s3">2369人已试听</span>
+						<button class=button button-clear>免费试听</button>
+					</span>
+				</ion-item>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book20.png">
+					<p>实战移动互联网营销：互联网+营销的7个关键要素</p>
+					<span class="ss">
+						<span>￥236</span>
+						<span class="s3">2369人已试听</span>
+						<button class=button button-clear>免费试听</button>
+					</span>
+				</ion-item>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book21.png">
+					<p>BEC商务英语中、高级连读【随到随学班】超实用职场英语</p>
+					<span class="ss">
+						<span class="s3">2369人已试听</span>
+						<button class=button button-clear>免费试听</button>
+					</span>
+				</ion-item>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book22.png">
+					<p>包含各专业医师资格笔试考试的全部课程内容，全程视频授课</p>
+					<span class="ss">
+						<span>￥236</span>
+						<span class="s3">2369人已试听</span>
+						<button class=button button-clear>免费试听</button>
+					</span>
+				</ion-item>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book23.png">
+					<p>中小学九年义务教育，课程视频辅导家教辅导</p>
+					<span class="ss">
+						<span class="s3">2369人已试听</span>
+						<button class=button button-clear>免费试听</button>
+					</span>
+				</ion-item>
+			</ion-list>
+			<div class="load">
+				<p>加载更多</p>
+			</div>
+		</ion-content>
+</ion-view>		
+<style type="text/css">
+		ul,li{
+			list-style: none;
+		}
+		ul{
+			width: 100%;
+			line-height: 34px;
+			text-align: center;
+		}
+		li{
+			float: left;
+			width: 50%;
+			text-align: center;
+			height: 39px;
+		}
+		.on{
+			border-bottom:1px solid #057ECF;
+			color:#057ECF ;
+		}
+		.item p{
+			white-space: normal;
+			color: #333;
+		}
+		.pic{
+			width: 75px;
+		}
+		.ss{
+			font-size: 13px;
+			color: #FF0000;
+			width: 100%;
+		    display: inline-block;
+		    margin-top:7px;
+		}
+		.s3{
+			display: inline-block;
+			margin-top:5px; 
+			color: #666;
+			margin-left: 5px;
+		}
+		.load{
+			height: 30px;
+			text-align: center;
+			color: #ccc;
+		}
+		.load p{
+			height: 30px;
+			line-height: 30px;
+		}
+		.button{
+			float: right;
+			min-height: 25px;
+			line-height:25px;
+			background-color: #FF9900;
+			color: #fff;
+			font-size: 14px;
+		}
+</style>

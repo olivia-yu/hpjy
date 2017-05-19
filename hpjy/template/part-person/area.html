@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>区域</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/area_prov.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+        <ion-header-bar class="bar bar-positive">
+            <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+            <h1 class="title">区域</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-divider">我的位置</ion-item>
+
+                <ion-item class="icon-left itembutton ">
+                    <i class="icon ion-ios-location"></i>
+                    河南 郑州 金水区
+                </ion-item>
+
+                <ion-item class="item-divider">全部</ion-item>
+
+                <ion-item class="itembutton itemcolor">
+                  二七区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   金水区
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                   管城回族区
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    中原区
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    郑州东区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                  上街区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    惠济区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    经济开发区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    高新区
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    航空港
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   郑州周边
+                </ion-item>
+            </ion-list>
+        </ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function () {
+
+    })
+</script>
+</html>

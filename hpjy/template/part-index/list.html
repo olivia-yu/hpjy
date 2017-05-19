@@ -1,0 +1,182 @@
+
+    <style>
+        .listjt{
+            margin-right: 20px;
+        }
+        .search{
+            padding:0;
+            background-image: linear-gradient(0deg, #fff, #fff 50%, transparent 50%);
+            background-color: transparent;
+            margin-top: -4px;
+            width: 75%;
+            background-size: 100% 0px;
+        }
+        .listbac{
+            background-color: #F1EFF8;
+        }
+        .listin{
+            background-color: #fff;
+            border-radius: 15px;
+        }
+        .has-header{
+            top:0;
+        }
+        .list-top{
+            background-color: #fff;
+        }
+        .listnav{
+            position: relative;
+        }
+       .list-top .listnav i.listion{
+            float: left;
+            position: absolute;
+            left: 78px;
+            top:3px;
+            font-size: 22px;
+        }
+       .listnav:before{
+           width: 1px;
+           height: 25px;
+           position: absolute;
+           content: "";
+           background-color: #ccc;
+           top:12px;
+           left: 122px;
+       }
+        .tabs-striped .tab-item.active{
+            border-color: #057ecf;
+            color: #057ecf;
+        }
+        .listcon{
+            margin-top: 105px;
+            border: 0;
+            padding-bottom: 2px;
+        }
+        .listcon1{
+            border: 0;
+            padding-bottom: 2px;
+        }
+        .listfir{
+            padding-top: 0;
+            padding-bottom:0 ;
+            padding-right: 0;
+            border: none;
+            border-bottom:1px dashed #e4e4e4;
+        }
+       .listfir h3.listtit{
+            white-space: normal;
+           line-height: 18px;
+           margin-bottom: 8px;
+        }
+        .listfir .listpric{
+            color: red;
+            margin-bottom: 6px;
+        }
+        .dic img{
+            width: 120px;
+        }
+        .listfont{
+            float: right;
+            font-size: 14px;
+        }
+        .listmore{
+            border: none;
+            background-color: #F1EFF8;
+            text-align: center;
+        }
+        .modal_list{
+            border: none;
+            padding: 16px 16px 5px;
+        }
+        .modal_list div{
+            width:100%;
+            border-bottom: 1px dashed #e4e4e4;
+            padding-bottom: 10px;
+        }
+        .modal{
+            margin-top: 95px;
+            min-height: 39%;
+           /* width: 100%;*/
+        }
+        .popover-open .popover{
+            width: 100%;
+            margin-top: 0;
+            left: 0;
+        }
+    </style>
+
+<ion-view>
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear listjt" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+        <div class="bar bar-header item-input-inset search">
+            <label class="item-input-wrapper listin">
+                <input type="search" placeholder="找什么呢？搜索试试吧">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+            </label>
+        </div>
+    </ion-header-bar>
+    <ion-content class="listbac">
+        <div class="tabs-striped tabs-top tabs-background-light">
+            <div class="tabs list-top">
+                <a class="tab-item active listnav" href="#" ng-click="show($event)">
+                    科目&nbsp;<i class="icon ion-android-arrow-dropup listion"></i>
+                </a>
+                <a class="tab-item listnav" href="#" ng-click="show($event)">
+                    销量&nbsp;<i class="icon ion-android-arrow-dropdown listion"></i>
+                </a>
+                <a class="tab-item listnav" href="#" ng-click="show($event)">
+                    价格&nbsp;<i class="icon ion-android-arrow-dropdown listion"></i>
+                </a>
+            </div>
+        </div>
+        <ion-list>
+            <ion-item class="listcon">
+                <a class="item item-thumbnail-left listfir" href="#">
+                    <img src="images/img/book2.png">
+                    <h3 class="listtit">《牵着蜗牛散步》王一梅童话系列注音版一年级课外书二年级必读</h3>
+                    <p class="listpric">价格：￥58元</p>
+                    <p class="dic">
+                        <img src="images/img/five.png" alt="">
+                        <span class="listfont">2369人已付款</span>
+                    </p>
+                </a>
+            </ion-item>
+            <ion-item class="listcon1">
+                <a class="item item-thumbnail-left listfir" href="#">
+                    <img src="images/img/book3.png">
+                    <h3 class="listtit">《马蒂的勇气》冰心奖获奖系列儿童文学少年励志小说馆第四辑全6册</h3>
+                    <p class="listpric">价格：￥69.32元</p>
+                    <p class="dic">
+                        <img src="images/img/four.png" alt="">
+                        <span class="listfont">6938人已付款</span>
+                    </p>
+                </a>
+            </ion-item>
+            <ion-item class="listcon1">
+                <a class="item item-thumbnail-left listfir" href="#">
+                    <img src="images/img/book4.png">
+                    <h3 class="listtit">《一切安排都恰到好处》两色风景作品亿万阅读千万点赞散文随笔现当代随笔</h3>
+                    <p class="listpric">价格：￥58元</p>
+                    <p class="dic">
+                        <img src="images/img/five.png" alt="">
+                        <span class="listfont">2369人已付款</span>
+                    </p>
+                </a>
+            </ion-item>
+            <ion-item class="listcon1">
+                <a class="item item-thumbnail-left listfir" href="#">
+                    <img src="images/img/book5.png">
+                    <h3 class="listtit">龙应台作品集：目送+野火集+亲爱的安德烈+孩子你慢慢来</h3>
+                    <p class="listpric">价格：￥58元</p>
+                    <p class="dic">
+                        <img src="images/img/four.png" alt="">
+                        <span class="listfont">636人已付款</span>
+                    </p>
+                </a>
+            </ion-item>
+            <ion-item class="listmore">
+                加载更多
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

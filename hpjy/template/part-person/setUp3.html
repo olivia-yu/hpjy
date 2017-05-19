@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/set_up.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+        <ion-header-bar class="bar bar-positive">
+            <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+            <h1 class="title">设置</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-button-right itembutton">
+                    <img src="images/35.png" alt="">
+                    <span>个人资料</span>
+                    <button class="button button-clear button-dark"><i class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton">
+                    <img src="images/36.png" alt="">
+                    <span>帮助中心</span>
+                    <button class="button button-clear button-dark"><i class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton ">
+                    <img src="images/37.png" alt="">
+                    <span>清理缓存</span>
+                    <button class="button button-clear button-dark" style="font-size:12px;"><i
+                            class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton">
+                    <img src="images/38.png" alt="">
+                    <span>关于我们</span>
+                    <button class="button button-clear button-dark"><i class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton">
+                    <img src="images/39.png" alt="">
+                    <span>版本更新</span>
+                    <button class="button button-clear button-dark"style="font-size:12px;"><i class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton ">
+                    <img src="images/40.png" alt="">
+                    <span>意见反馈</span>
+                    <button class="button button-clear button-dark"><i class="icon ion-ios-arrow-right"></i></button>
+                </ion-item>
+
+                <ion-item class="item-divider"></ion-item>
+
+                <ion-item class="item-button-right itembutton item-toggle">
+                    <img src="images/41.png" alt="">
+                    <span>夜间模式</span>
+                            <label class="toggle toggle-balanced">
+                                <input type="checkbox">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                </ion-item>
+                <ion-item style="background-color: #f1eff8;border: none;padding-bottom: 5px">
+                    <button class="button button-block" style="
+            background-color: #f90;margin: auto;color: #fff">退出当前账号
+                    </button>
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+        <ion-list>
+            <div class="fixedd">
+                当前已是最新版本
+            </div>
+        </ion-list>
+
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function () {
+
+    })
+</script>
+</html>

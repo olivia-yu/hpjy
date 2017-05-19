@@ -1,0 +1,83 @@
+.bar.item-input-inset .item-input-wrapper {
+    background: #fff;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.bar.item-input-inset .item-input-wrapper input {
+    background: #fff;
+    color: #ccc;
+    border-radius: 15px;
+}
+.bar.item-input-inset .item-input-wrapper i {
+    color: #ccc;
+}
+.item{
+    border-style: none;
+}
+.col{
+    padding: 0px;
+    text-align: center;
+}
+.col i{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.row{
+    padding: 0px;
+}
+.row .left{
+    border-right: #ccc solid 1px;
+}
+
+.hotvideo{
+    padding-left: 110px;
+    position: relative;
+}
+.hotvideo i{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.hotvideo .i1{
+    background: url("../images/img04/video1.png") no-repeat;
+    background-size: 100%;
+}
+.hotvideo .i2{
+    background: url("../images/img04/pic1.png") no-repeat;
+    background-size: 100%;
+}
+.hotvideo .i3{
+    background: url("../images/img04/video2.png") no-repeat;
+    background-size: 100%;
+}
+.hotvideo .i4{
+    background: url("../images/img04/video3.png") no-repeat;
+    background-size: 100%;
+}
+.hotvideo .i5{
+    background: url("../images/img04/video-4.png") no-repeat;
+    background-size: 100%;
+}
+.hotvideo .button{
+    background: orange;
+    color: #fff;
+    outline: none;
+    float: right;
+    min-height: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.hotvideo .price{
+    margin-top: 20px;
+}
+.hotvideo span.hot{
+    color: red;
+    margin-right: 8px;
+}
+.item-divider p{
+    text-align: center;
+    color: #ccc;
+}

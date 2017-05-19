@@ -1,0 +1,83 @@
+/*Personal Center1样式*/	
+	
+body {
+    background-color: #f1eff8;
+}
+.itembutton>span{
+    font-size: 12px;
+    /*color: #ccc;*/
+}
+.item{
+    border: 1px dotted #ccc;
+}
+
+#button_a{
+    color: #f90;
+    width: 80px;
+    font-size: 12px;
+    top: 18px;
+    right: 14px;
+}
+.row{
+    padding: 0;
+}
+.item-divider{
+    min-height: 14px;
+}
+#row_a>div>img{
+width: 30px;
+}
+#row_a>div:first-child{
+    padding-top: 5px;
+}
+#row_a>div:first-child>img{
+    width: 30px;
+}
+#row_a>div:nth-child(3)>img{
+    width: 28px;
+}
+#row_a>div:nth-child(4)>img{
+    width: 24px;
+}
+#row_a>div{
+    text-align: center;
+    font-size: 12px;
+}
+#ionitem_a{
+    border-bottom: dotted 1px #ccc;
+}
+#ionitem_b{
+    border-top: dotted 1px #ccc;
+}
+.itembutton>img{
+    width: 30px;
+    vertical-align: middle;
+}
+.itembutton i{
+    padding-top: 6px;
+    padding-left: 11px;
+}
+.tab-item i.icon {
+    margin-top: 1px;
+}
+.bar-home-on {
+    background: url(images/bar-home.png) no-repeat center top;
+}
+
+.bar-home-off {
+    background: url(images/bar-home-off.png) no-repeat center top;
+}
+
+/*Personal Center2样式*/
+#buttona{
+    color: #f90;
+    width: 80px;
+    font-size: 12px;
+    top: 18px;
+    right: 26px;
+}
+.item h2{
+    line-height: 31px;
+     border-bottom:none;
+}
+

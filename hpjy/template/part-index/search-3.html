@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .bar.item-input-inset .item-input-wrapper {
+            background: #fff;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+        .bar.item-input-inset .item-input-wrapper input {
+            background: #fff;
+            color: #ccc;
+            border-radius: 15px;
+        }
+        .bar.item-input-inset .item-input-wrapper i {
+            color: #ccc;
+        }
+        .item-divider h3{
+            color: #333;
+        }
+        .item{
+            border-style: none;
+        }
+        .item.all{
+            margin: 0 16px;
+            border-bottom: 1px dashed #cccccc;
+        }
+        .all p.clear{
+            text-align: center;
+            color: #ccc;
+        }
+        .row .col{
+            font-size: 14px;
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .time{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .time img{
+            vertical-align: middle;
+            width: 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+    <ion-header-bar class="bar-positive item-input-inset">
+        <button class="button button-clear icon ion-chevron-left">
+        </button>
+        <label class="item-input-wrapper">
+            <input type="search" placeholder="找什么呢？搜索试试吧">
+            <i class="icon ion-ios-search"></i>
+        </label>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-divider">
+                <h3>热门搜索</h3>
+                <div class="row">
+                    <div class="col col-33">考试</div>
+                    <div class="col col-33">高考攻略</div>
+                    <div class="col col-33">资料</div>
+                </div>
+                <div class="row">
+                    <div class="col col-33">英语</div>
+                    <div class="col col-33">技术</div>
+                    <div class="col col-33">公务员</div>
+                </div>
+                <div class="row">
+                    <div class="col col-33">会计注册</div>
+                    <div class="col col-33">复习</div>
+                    <div class="col col-33">教师</div>
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    高考秘籍
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    英语视频播放
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    专业老师指导
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    词典大全
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    教师资格证
+                </div>
+            </ion-item>
+            <ion-item class="all">
+                <div class="time">
+                    <img src="images/time.png" alt="">
+                    幼儿教育
+                </div>
+            </ion-item>
+            <ion-item class="all">
+               <p class="clear">清除搜索记录</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function ($scope) {
+
+    })
+</script>
+</html>

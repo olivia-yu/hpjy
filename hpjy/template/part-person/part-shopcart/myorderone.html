@@ -1,0 +1,207 @@
+<ion-view>
+		<!--页头-->
+		<ion-header-bar class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="button button-clear icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">我的订单</h1>
+		</ion-header-bar>
+		<div class="bar bar-subheader">
+			<ul>
+				<li class="on">
+					<a href="" class="active">全部</a>
+				</li>
+				<li><a href=""  ui-sref="^.myorderthree">待付款</a></li>
+				<li><a href="">待发货</a></li>
+				<li><a href="">待收货</a></li>
+				<li><a href="" ui-sref="^.comment">待评价</a></li>
+			</ul>
+		</div>
+		<!--内容-->
+		<ion-content style="margin-top:40px">
+		<!--卖家已发货-->
+			<ion-list>
+				<ion-item id="ttop">
+					<span class="s1">卖家已发货</span>
+					<ion-list>
+						<ion-item class="item-thumbnail-left" id="book">
+							<img src="images02/book1.png">
+					   	    <h2 style="white-space:normal;font-size:13px;">著名品牌助学读物 跟我学语文 二年级下册 2年级下 人教版 钱丽华主编 小学生必背工具书 </h2>
+					   	    <p class="p1" style="color:#FF0000;">￥64.02  
+					   	    	<span style="float:right;color:#333;">x1</span>
+					   	    </p>
+						</ion-item>
+						<div class="sum">
+							<p>共计1件商品  合计：￥<span class="ss">235</span>.00（含运费￥0.00）</p>
+						</div>
+						<div class="confirm">
+							<button class="button button-clear" style="color:#FE4607;;float: right;" id="enter">确认收货</button>
+						</div>
+					</ion-list>
+				</ion-item>
+			</ion-list>
+		<!--交易成功-->
+		    <ion-list>
+				<ion-item id="ttop">
+					<span class="s1">交易成功</span>
+					<ion-list>
+						<ion-item class="item-thumbnail-left" style="border:0;background-color:#F1EFF8;">
+							<img src="images02/book2.png">
+					   	    <h2 style="white-space:normal;font-size:13px;">吉他谱 最易上手吉他弹唱教程186首流行歌曲谱教学教材初学吉他书湖南文艺出版  </h2>
+					   	     <p class="p1" style="color:#FF0000;">￥64.02  
+					   	    	<span style="float:right;color:#333;">x1</span>
+					   	    </p>
+						</ion-item>
+						<div class="sum">
+							<p>共计2件商品  合计：￥<span class="ss">235</span>.00（含运费￥0.00）</p>
+						</div>
+						<div class="confirm">
+							<button class="button button-clear" style="color:#FE4607;;float: right;" id="enter">评价</button>
+							<button class="button button-clear" style="color: #666666;border: 1px solid #666;float: right;" id="enter" ng-click="deleteItem($index)">删除订单</button>	
+						</div>
+					</ion-list>
+				</ion-item>
+			</ion-list>
+		<!--交易关闭-->	
+		     <ion-list>
+				<ion-item id="ttop">
+					<span class="s1">交易成功</span>
+					<ion-list>
+						<ion-item class="item-thumbnail-left" style="border:0;background-color:#F1EFF8;">
+							<img src="images02/book3.png">
+					   	    <h2 style="white-space:normal;font-size:13px;">2016春【苏教版】通城学典 非常课课通 4/四年级语文下册 小学同步课堂讲解  </h2>
+					   	    <p class="p1" style="color:#FF0000;">￥64.02  
+					   	    	<span style="float:right;color:#333;">x1</span>
+					   	    </p>
+						</ion-item>
+						<div class="sum">
+							<p>共计2件商品  合计：￥<span class="ss">235</span>.00（含运费￥0.00）</p>
+						</div>
+						<div class="confirm">
+							<button class="button button-clear" style="color: #666666;border: 1px solid #666;float: right;" id="enter" ng-click="deleteItem($index)">删除订单</button>	
+						</div>
+					</ion-list>
+				</ion-item>
+			</ion-list>
+		</ion-content>	
+</ion-view>
+<style type="text/css">
+	    body{
+	    	font-size: 14px;
+	    }
+		ul,li{
+			list-style: none;
+			float: left;
+		}
+		a{
+			color: #000;
+			text-decoration: none;
+		}
+		#ttop{
+			margin-top: 15px;
+			padding:16px 0;
+			padding-top:0;
+			padding-bottom: 0;
+		}
+		ul{
+			width: 100%;
+			height:16px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		li{
+			width: 20%;
+			height:38px;
+			line-height:38px;
+			text-align: center;
+		}
+		li a{
+		    width: 20%;
+			height:10px;
+			line-height:16px;
+			text-align: center;	
+			font-size:14px;
+		}
+		li.on{
+			border-bottom:3px solid #FF5000;
+		}
+		a.active{
+			color:#FF5000;
+		}
+		.s1{
+			color:#FE4607;
+			float: right;
+		    width: 100%;
+		    height: 50px;
+		    line-height: 50px;
+		    text-align: right;
+		    font-size: 14px;
+		    margin-right: 10px;
+		}
+		#book{
+			border:0;
+			background-color:#F1EFF8;
+		}
+		.sum{
+			height:50px;			
+		}
+		.sum .ss{
+			font-size:17px;
+		}
+		.sum p{
+			width: 100%;
+			height:50px;
+			line-height: 50px;
+			text-align:right;
+			border-bottom: 1px dashed #ccc;
+		}
+		.p1{
+			margin-top: 12px;
+			color:#FF0000;
+		}
+		.confirm{
+			width: 100%;
+			height:50px;
+			line-height: 50px;
+			text-align: center;
+		}
+		.button-clear.button-clear{
+			border:1px solid #FE4607;
+			text-align: center;
+		}
+		.button{
+			min-height: 30px;
+		}
+		#enter{
+			width: 75px;
+			height:25px;
+			line-height: 25px;
+			text-align: center;
+			margin-top: 10px;
+    		margin-right: 10px;
+		}
+		.popup-container.active .popup{
+			border-radius:16px;
+			height: 126px;
+		}
+		.popup-head{
+			border-bottom: 0;
+			padding: 0;
+		}
+		.popup-body{
+			text-align: center;
+			height: 60px;
+			line-height: 42px;
+			border-bottom: 1px solid #ccc;
+		}
+		span{
+			font-size: 16px;
+		}
+		.button.button-dark{
+			background-color: #F4F4F5;
+			color:#057ECF;
+			border-right: 1px solid #ccc;
+		}
+		.button.button-positive{
+			background-color: #F4F4F5;
+			color:#057ECF;
+		}
+</style>

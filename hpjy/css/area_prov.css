@@ -1,0 +1,54 @@
+
+.tab-item i.icon {
+    margin-top: 1px;
+}
+.item-divider {
+    min-height: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #ccc;
+    font-size: 12px;
+}
+.itembutton{
+    color: #6a6a6a;
+}
+.itemcolor{
+    border: 1px dotted #ccc;
+    /*border: none;*/
+}
+div#sett{
+    width: 90%;
+    margin: 0 auto;
+    text-indent: 2rem;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.itemm{
+    min-height: 136px;
+    color: #ccc;
+    font-size: 12px;
+}
+.setbutton{
+    background-color: #f1eff8;
+    border: none;
+    padding-bottom: 5px;
+}
+.setbuttonn{
+    background-color: #f90;
+    margin: auto;
+    color: #fff;
+}
+.card, .list-inset {
+    /*overflow: hidden;*/
+    margin: 9px 10px;
+    border-radius: 12px;
+    /*background-color: #fff;*/
+}
+
+.item-button-left {
+    padding-left: 36px;
+}
+.button.button-light.button-clear {
+    color: #000;
+}

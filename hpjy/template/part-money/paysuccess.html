@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css" />
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+		
+		<style>
+			
+			
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<!--头部-->
+		<ion-header-bar class="bar-positive" align-title="center">
+			<button class="button icon-left ion-ios-arrow-left button-clear button-clam"></button>
+			<h1 class="title">支付成功</h1>
+		</ion-header-bar>
+
+		<!--内容-->
+		<ion-content class="has-header">
+			<ion-list>
+				<ion-item style="text-align: center;">
+					<img src="images/duihao1.png" alt="" style="width:25px;height:auto;"/>
+					<span style="color:#ff9900;font-size: 25px;">恭喜您,支付成功！</span>
+				</ion-item>
+				<ion-item>
+					<p><span style="color:#333;">购买名称&nbsp;:&nbsp;</span><span style="color:#000;">高等学院研究生英语系列教材：综合教程</span></p>
+					<p><span style="color:#333;">购买金额&nbsp;:&nbsp;</span><span style="color:#ff9900;">￥70.56</span></p>
+				</ion-item>
+				
+				<ion-item style="text-align: center;">
+					<button class="button button-stable button-outline">查看订单</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="button button-energized button-outline">继续购物</button>
+				</ion-item>
+			</ion-list>
+		</ion-content>	
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		
+		app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
+			  // 解决android手机tabs选项卡刷新后出现在浏览器上边的问题
+        $ionicConfigProvider.platform.ios.tabs.style('standard');
+        $ionicConfigProvider.platform.ios.tabs.position('bottom');
+        $ionicConfigProvider.platform.android.tabs.style('standard');
+        $ionicConfigProvider.platform.android.tabs.position('standard');
+
+        $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+        $ionicConfigProvider.platform.android.navBar.alignTitle('left');
+
+        $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+        $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
+
+        $ionicConfigProvider.platform.ios.views.transition('ios');
+        $ionicConfigProvider.platform.android.views.transition('android');  
+	})	
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+	
+</html>

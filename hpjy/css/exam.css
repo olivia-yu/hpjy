@@ -1,0 +1,99 @@
+.bar .title.title-left{
+    text-align: center;
+}
+.back{
+    background-color: #f1eff8;
+}
+.back .list{
+    background-color: #fff;
+}
+.back .list ion-item.exami{
+    padding: 13px 16px;
+}
+.top-img{
+    width: 22px;
+    vertical-align: sub;
+}
+.font{
+    font-size: 18px;
+    margin-top: 3px;
+}
+.fir{
+    float: right;
+    width: 80px;
+    min-height: 33px;
+    line-height: 30px;
+    border: 1px solid #ff9900;
+    color: #ff9900;
+    background-color: #fff;
+    font-weight: bold;
+}
+.itema{
+    padding: 13px 16px 0;
+    border-bottom: 0;
+}
+.itemtitle{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+.itemtitle p span{
+    color: #ff9900;
+}
+.cont-box{
+    padding: 13px 16px 10px 0;
+    border: none;
+    border-bottom: 1px dashed #e4e4e4;
+}
+.checkbox input:checked + .checkbox-icon:before{
+    background-color: #ff9900;
+    background: #ff9900;
+}
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before{
+    background: #ff9900;
+    border-color: #ff9900;
+}
+.cont-box p{
+    white-space: normal;
+}
+.cont{
+    border: none;
+    padding: 15px 0;
+    width: 15%;
+    float: left;
+    text-align: left;
+    margin-top: 2%;
+}
+.next{
+    margin-top: 2%;
+}
+.rigfont{
+    width: 85%;
+    float: left;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.under{
+    padding-bottom: 15px;
+}
+.btn1,.btn2{
+    min-width: 125px;
+}
+.btn1{
+    margin-right: 15px;
+    margin-left: 13px;
+    background-color: #c1bdbd;
+    color: #fff;
+}
+.foter{
+    background-color: #f1eff8;
+    border: 0;
+    width: 100%;
+}
+
+
+.checkbox-platform input:before, .platform-android .checkbox-platform .checkbox-icon:before, .checkbox-square input:before, .checkbox-square .checkbox-icon:before{
+    border-radius: 28px;
+}

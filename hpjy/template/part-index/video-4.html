@@ -1,0 +1,56 @@
+<ion-view  hide-tabs="true">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-chevron-left" ng-click="$ionicGoBack()"></button>
+        <h1 class="title">课件视频</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="banner">
+            <img src="images/img04/banner1.png" alt="">
+        <span><img src="images/img04/aa.png" alt=""></span>
+        </div>
+        <div class="row tab">
+            <div class="col col-33" ui-sref="^.video-2">简介</div>
+            <div class="col col-33" ui-sref="^.video-3">章节</div>
+            <div class="col col-33 blue" ui-sref="^.video-4">评价</div>
+        </div>
+        <ion-list>
+           <ion-item class="item-divider video4"></ion-item>
+            <ion-item class="write video4">
+                <img src="images/img04/write.png" alt="">
+                <input type="text" placeholder="我来说点什么~">
+            </ion-item>
+            <ion-item class="item-divider video4"></ion-item>
+            <ion-item class="all video4">
+                <div class="pinlun">
+                    <i class="i1"></i>
+                    <h2>小星星 <span>今天10:20</span></h2>
+                    <div>视频讲的挺到位的，我之前有时候在课堂上听不懂的，看了这个视频思路清晰多了</div>
+                </div>
+            </ion-item>
+            <ion-item class="all video4">
+                <div class="pinlun">
+                    <i class="i2"></i>
+                    <h2>安妮宝贝 <span>今天11:28</span></h2>
+                    <div>我觉得对我来说还是起到了学习的作用</div>
+                </div>
+            </ion-item>
+            <ion-item class="all video4">
+                <div class="pinlun">
+                    <i class="i3"></i>
+                    <h2>小松鼠 <span>2016-02-18</span></h2>
+                    <div>这个视频真的挺好的，我这种记性不太好的，不懂可以反复看</div>
+                </div>
+            </ion-item>
+            <ion-item class="item-divider video4"></ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="down-shop">
+        <div class="row foot">
+            <div class="col"><div><img src="images/img04/fen.png" alt=""><div>分享</div></div></div>
+            <div class="col right"><div><img src="images/img04/ke.png" alt=""><div>客服</div></div></div>
+            <div class="col right"><div><img src="images/img04/shou.png" alt=""><div>收藏</div></div></div>
+            <div class="col col-25 shopcart">加入购物车</div>
+            <div class="col col-25 pay" ui-sref="^.order">立即购买</div>
+        </div>
+    </ion-footer-bar>
+</ion-view>

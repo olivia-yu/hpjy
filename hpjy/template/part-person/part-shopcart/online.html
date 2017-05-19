@@ -1,0 +1,126 @@
+<ion-view>
+		<!--页头-->
+		<ion-header-bar  class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">在线报班</h1>
+		</ion-header-bar>
+		<!--导航-->
+		<div class="bar bar-subheader">
+	        <div class="col" class="bc">
+	        	<span>全部学段</span>
+	        	<img src="images02/shanjiao.png">
+	        </div>
+		    <div class="col">
+		    	<span>班次</span>
+	        	<img src="images02/shanjiao2.png">
+		    </div>
+		    <div class="col">
+		    	<span>科目</span>
+	        	<img src="images02/shanjiao2.png">
+		    </div>
+       </div>	
+		<!--内容-->
+		<ion-content class="has-header has-subheader">
+			<ion-list>
+				<ion-item>
+					<p>2016教师资格证报班学习</p>
+					<span class="stu">5682人已学习 <b>￥ 3800</b>
+						<button class="button button-clear" ui-sref="^.online-3">点击报班</button>
+					</span>			
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>
+					<p>韩语出国进修班学习课程 日用韩语</p>
+					<span class="stu">2369人已学习 <b>￥5200</b>
+						<button class="button button-clear">点击报班</button>
+					</span>			
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>
+					<p>会计从业《会计电算化》专业一对一课程班</p>
+					<span class="stu">568人已学习<b>￥3200</b>
+						<button class="button button-clear">点击报班</button>
+					</span>			
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>
+					<p>高考英语冲刺班</p>
+					<span class="stu">1358人已学习 <b>￥ 1500</b>
+						<button class="button button-clear">点击报班</button>
+					</span>			
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>
+					<p>幼儿学习班托管班绘画班围棋班</p>
+					<span class="stu">3265人已学习 <b>￥ 2800</b>
+						<button class="button button-clear">点击报班</button>
+					</span>					
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>
+					<p>少儿国际象棋兴趣班</p>
+					<span class="stu">983人已学习 <b>￥ 6800</b>
+						<button class="button button-clear">点击报班</button>
+					</span>		
+				</ion-item>
+			</ion-list>
+		</ion-content>
+</ion-view>		
+<style type="text/css">
+		.bar-subheader{
+			text-align: center;
+		}
+		div.col:nth-child(1){
+			border-bottom:1px solid #0997F8;
+			height:39px;
+		}
+		.bc{
+			border-right:1px solid #ccc;
+		}
+		img{
+			width: 11px;
+		}
+		.item p{
+			font-size: 15px;
+		}
+		.stu{
+			width: 100%;
+			display: inline-block;
+			margin-top: 14px;
+		    font-size: 14px;
+		    color: #999;
+		}
+		b{
+			color: #FF0000;
+			font-weight: normal;
+			margin-left: 13px;
+		}
+		
+		.button{
+			float: right;
+			min-height: 25px;
+			line-height:25px;
+			background-color: #FF9900;
+			color: #fff;
+			font-size: 14px;
+		}
+		.list:last-child{
+			margin: 0 10px;
+		}
+		.item{
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+		}
+		.button-clear.button-clear{
+			    border-color: transparent;
+			    background-color: #FF9900;
+				color: #fff;
+			    box-shadow: none;
+		}
+</style>

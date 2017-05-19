@@ -1,0 +1,54 @@
+<style>
+ .scroll-content{
+    background: #f1eff8;
+}
+.io-bdo{
+    border-radius: 10px ;
+    margin:0 15px 15px;
+    line-height: 25px;
+    min-height:0;
+    height:55px;
+    color:#057cef;
+}
+.io-bd{
+    border-radius: 10px ;
+    margin:0 15px 15px;
+    line-height: 25px;
+    min-height:0;
+    height:55px;
+}
+.item-avatar>img:first-child {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+}
+ .item-avatar .item-content>img:first-child{
+     top: 8px;
+ }
+</style>
+
+
+    <ion-view hide-tabs="true">
+<ion-header-bar class="bar-positive" >
+    <button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+<h1 class="title">我的题库</h1>
+</ion-header-bar>
+<ion-content class="has-header">
+<ion-list class="item-icon-right">
+    <ion-item class="item-avatar io-bdo "  ui-sref="^.zuotijilu">
+        <img src="person/page1-01.png" alt="">
+        做题记录
+        <i class="icon ion-ios-arrow-right"></i>
+    </ion-item>
+    <ion-item class="item-avatar io-bd" ui-sref="^.cuotiji">
+        <img src="person/page1-02.png" alt="">
+        错题集
+        <i class="icon ion-ios-arrow-right"></i>
+    </ion-item>
+</ion-list>
+</ion-content>
+</ion-view>
+
+
+

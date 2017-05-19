@@ -1,0 +1,71 @@
+
+    <style>
+        body{
+            background: #f1eff8;
+        }
+        .badge{
+            background-color:#ff9900;
+            color:#fff;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 5px;
+        }
+        .item .badge{
+            position: absolute;
+            top: 85px;
+            right: 20px;
+        }
+        .item-thumbnail-left>img:first-child {
+            max-height: 93px;
+        }
+        .item-thumbnail-left{
+            min-height: 120px;
+        }
+    </style>
+
+<ion-view>
+<ion-header-bar class="bar-positive">
+    <button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+<h1 class="title">我的电子书</h1>
+</ion-header-bar>
+<ion-content class="has-header">
+<ion-list>
+    <ion-item class="item-thumbnail-left">
+        <img src="person/page6-1.png" alt="" ui-sref="^.shujixiangqing">
+        <h2>《青春的足迹》</h2>
+        <p>王一梅童话系列注音版一年级课外书二年<br/>
+            级必读王一梅童话系列注音版一年级课外<br/>
+            书二年级必读
+        </p>
+        <i class="badge">下载</i>
+    </ion-item>
+    <ion-item class="item-thumbnail-left">
+        <img src="person/page6-2.png" alt="">
+        <h2>《玛蒂的勇气》</h2>
+        <p>冰心奖获奖系类儿童文学少年励志小说馆<br/>
+            第四辑全6册
+        </p>
+        <i class="badge">下载</i>
+    </ion-item>
+    <ion-item class="item-thumbnail-left">
+        <img src="person/page6-3.png" alt="">
+        <h2>《恰到好处的生活》</h2>
+        <p>两色风景作品 亿万阅读 千万点赞 散文随笔<br/>
+            当代随笔千万点赞 散文随笔
+        </p>
+        <i class="badge">下载</i>
+    </ion-item>
+    <ion-item class="item-thumbnail-left">
+        <img src="person/page6-4.png" alt="">
+        <h2>《木偶奇遇记》</h2>
+        <p>长鼻子木偶皮诺基奥是一个神奇的木偶，能走<br/>
+            能跑能跳，会说会笑会哭，这是老杰佩托用一<br/>
+            段极普通的木头雕成的
+        </p>
+        <i class="badge">下载</i>
+    </ion-item>
+</ion-list>
+</ion-content>
+</ion-view>
+

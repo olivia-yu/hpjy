@@ -1,0 +1,28 @@
+
+.scroll-content{
+    background: #f1eff8;
+}
+.io-bdo{
+    border-radius: 10px ;
+    margin:0 15px 15px;
+    line-height: 25px;
+    min-height:0;
+    height:55px;
+    color:#057cef;
+}
+.io-bd{
+    border-radius: 10px ;
+    margin:0 15px 15px;
+    line-height: 25px;
+    min-height:0;
+    height:55px;
+}
+.item-avatar>img:first-child {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+}
+.item-avatar .item-content>img:first-child{
+    top: 8px;
+}

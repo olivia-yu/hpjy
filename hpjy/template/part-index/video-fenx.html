@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .banner img{
+            width: 100%;
+        }
+        .banner{
+            position: relative;
+        }
+        .banner span{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .tab{
+            padding: 0px;
+        }
+        .item{
+            border-style: none;
+            padding: 16px 0;
+        }
+        .item.all{
+            margin: 0 16px;
+            border-bottom: 1px dashed #cccccc;
+        }
+        .all p{
+            line-height: 20px;
+        }
+        .all p img{
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .tab .col{
+            text-align: center;
+            border-bottom: 2px solid #cccccc;
+        }
+        .tab .blue{
+            color: #387ef5;
+            border-color:#387ef5;
+        }
+        .cet4 p span{
+            float: right;
+        }
+        .nav .col{
+            text-align: center;
+        }
+        .nav .col img{
+            vertical-align: middle;
+            height: 16px;
+            margin-right: 10px;
+        }
+        .all .pro{
+            font-weight: bold;
+        }
+        .bar-footer{
+            height: 55px;
+        }
+        .bar{
+            padding: 0px;
+        }
+        .foot{
+            padding: 0px;
+        }
+        .foot .col{
+            text-align: center;
+        }
+        .foot .right>div{
+            border-left: 1px solid #cccccc;
+        }
+        .foot .col img{
+            margin-top: 5px;
+            height: 16px;
+        }
+        .shopcart{
+            line-height: 45px;
+            background: #FF9900;
+            color: #fff;
+        }
+        .pay{
+            line-height: 45px;
+            background: #ff0000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-chevron-left"></button>
+        <h1 class="title">课件视频</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="banner">
+            <img src="images/banner1.png" alt="">
+        <span><img src="images/aa.png" alt=""></span>
+        </div>
+        <div class="row tab">
+            <div class="col col-33 blue">简介</div>
+            <div class="col col-33">章节</div>
+            <div class="col col-33">评价</div>
+        </div>
+        <ion-list>
+            <ion-item class="all">
+                <div class="cet4">
+                    <p>大学英语四级/CET41V1私人定制【18课时】星火式巧记速记法掌握六级词汇的奥义</p>
+                    <p><img src="images/star.png" alt="">5.0分</p>
+                    <p>￥200<span>36958人在学习</span></p>
+                </div>
+            </ion-item>
+            <div class="row nav">
+                <div class="col col-33"><img src="images/road.png" alt="">免费试听</div>
+                <div class="col col-33"><img src="images/road.png" alt="">名师特约</div>
+                <div class="col col-33"><img src="images/road.png" alt="">当面辅导</div>
+            </div>
+            <div class="row nav">
+                <div class="col col-33"><img src="images/road.png" alt="">随堂测试</div>
+                <div class="col col-33"><img src="images/road.png" alt="">归纳总结</div>
+                <div class="col col-33"><img src="images/road.png" alt="">免费资料</div>
+            </div>
+            <ion-item class="item-divider"></ion-item>
+            <ion-item class="all">
+                <span class="pro">名师简介</span>
+            </ion-item>
+            <div class="row">
+                <div class="col">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;侯晓青，女，中共党员，毕业于西华师范大学英语系．中学高级教师，现任校团委副书记、初2008级班主任．任教初中英语．多次荣获英语竞赛指导教师奖，
+                    在省、市、县各级刊物多次发表文章．曾多次获得县校级＂优秀教师＂和“优秀班主任”“优秀共产党员”，“优秀年级组长”等称号，所带班多次获得“县级优秀班集体”
+                </div>
+
+            </div>
+            <ion-item class="item-divider"></ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar>
+        <div class="row foot">
+            <div class="col" ng-click="showFenx($event)"><div><img src="images/fen.png" alt=""><div>分享</div></div></div>
+            <div class="col right"><div><img src="images/ke.png" alt=""><div>客服</div></div></div>
+            <div class="col right"><div><img src="images/shou.png" alt=""><div>收藏</div></div></div>
+            <div class="col col-25 shopcart">加入购物车</div>
+            <div class="col col-25 pay">立即购买</div>
+        </div>
+    </ion-footer-bar>
+</body>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl", function ($scope, $ionicPopover) {
+        $ionicPopover.fromTemplateUrl("template/video/showFenx.html",
+                {
+                    scope: $scope,
+                    animate: "slide-in-up"
+                })
+                .then(function (modal) {
+                    $scope.dialog = modal;
+                });
+        $scope.showFenx=function(e){
+            $scope.dialog.show(e)
+        }
+        $scope.closeFenx=function(){
+            $scope.dialog.hide()
+        }
+    })
+</script>
+</html>

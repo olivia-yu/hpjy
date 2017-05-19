@@ -1,0 +1,159 @@
+
+    <style>
+        .scroll-content{
+            background: #f1eff8;
+        }
+        .topp{
+            padding-top:10px;
+            text-align: center;
+            color:#999;
+            font-size: 12px;
+        }
+        .one{
+            width:100%;
+            height:20%;
+            position:relative;
+            margin:20px 0;
+            font-size: 12px;
+        }
+        .item-thumbnail-right>img:first-child {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            max-width: 50px;
+            max-height: 50px;
+            width: 100%;
+            height: 100%;
+        }
+        .qingqiu{
+            width:70%;
+            height: 70px;
+            line-height: 25px;
+            background:#fff;
+            padding:10px;
+            border-radius: 10px;
+            position: relative;
+            left: 6%;
+        }
+        .qingqiu:after{
+            content:"";
+            width:13px;
+            height:13px;
+            background: #fff;
+            position: absolute;
+            left: 217px;
+            top: 20px;
+            transform: rotate(45deg);
+        }
+        .item-thumbnail-right{
+            float:right;
+        }
+        .two{
+            width:100%;
+            height:20%;
+            position:relative;
+            margin:20px 0;
+            font-size: 12px;
+        }
+        .teacher{
+            width:70%;
+            height: 70px;
+            line-height: 25px;
+            background:#fff;
+            padding:10px;
+            border-radius: 10px;
+            position: relative;
+            left: 24%;
+        }
+        .teacher:after{
+            content:"";
+            width:13px;
+            height:13px;
+            background: #fff;
+            position: absolute;
+            left: -6px;
+            top: 20px;
+            transform: rotate(45deg);
+        }
+        .item-thumbnail-left>img:first-child {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            max-width: 50px;
+            max-height: 50px;
+            width: 100%;
+            height: 100%;
+        }
+        .item-thumbnail-left{
+            float:left;
+            padding-left: 15px;
+        }
+
+        .under{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .item-input-wrapper{
+            width: 60%;
+            float: left;
+        }
+        .inp{
+            background: #eee;
+        }
+        .font{
+            color: #666;
+            width:45px;
+        }
+        .fot{
+            padding: 0;
+        }
+        .pad{
+            padding: 10px 16px;
+        }
+    </style>
+
+<ion-view>
+<ion-header-bar class="bar-positive">
+    <button class="button button-clear" ng-click="ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+<h1 class="title">笨笨猫</h1>
+</ion-header-bar>
+<ion-content class="has-header">
+<div class="topp">
+    <p>无更多历史消息</p>
+    <p>今天09:21</p>
+</div>
+    <div class="one">
+        <div class="item-thumbnail-right">
+            <img src="person/page17-1.png" alt="">
+        </div>
+        <div class="qingqiu">
+        <p>我已经通过了你的好友请求，我们可以开始交流心得了</p>
+         </div>
+    </div>
+    <div class="two">
+        <div class="item-thumbnail-left">
+            <img src="person/page15-3.png" alt="">
+        </div>
+        <div class="teacher">
+            <p>我今天看了一本关于报考教师资格证的辅导书挺不错的你可以看看</p>
+        </div>
+    </div>
+</ion-content>
+<ion-footer-bar class="bar-light fot">
+    <ion-list class="under">
+        <ion-item class="icon-right pad">
+            <label class="item-input-wrapper">
+                <input type="text" class="inp">
+                <i class="icon ion-android-happy"></i>
+            </label>
+            <button class="button button-small button-outline button-stable font">
+                发表
+            </button>
+            <button class="button button-small button-outline button-stable font">
+                取消
+            </button>
+        </ion-item>
+    </ion-list>
+</ion-footer-bar>
+</ion-view>

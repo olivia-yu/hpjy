@@ -1,0 +1,83 @@
+
+    <style>
+        body{
+            background: #f1eff8;
+        }
+        .badge{
+            background-color:#ff9900;
+            color:#fff;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 5px;
+        }
+        .item .badge{
+            position: absolute;
+            top: 85px;
+            right: 20px;
+        }
+        .item-thumbnail-left>img:first-child {
+            max-height: 93px;
+        }
+        .item-thumbnail-left{
+            min-height: 120px;
+        }
+        .h2{
+            text-align: center;
+        }
+    </style>
+
+<ion-view >
+<ion-header-bar class="bar-positive">
+    <button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+<h1 class="title">书籍详情</h1>
+</ion-header-bar>
+<ion-content class="has-header">
+<ion-list>
+    <ion-item class="item-thumbnail-left">
+        <img src="person/page6-1.png" alt="">
+        <h2>《青春的足迹》</h2>
+        <p>王一梅童话系列注音版一年级课外书二年<br/>
+            级必读王一梅童话系列注音版一年级课外<br/>
+            书二年级必读
+        </p>
+        <i class="badge">下载</i>
+    </ion-item>
+</ion-list>
+    <ion-list class="list-inset">
+        <ion-item>
+            <h2>简介</h2>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  王继颖，河北省作家协会会员，语文高级教师。他一路追寻着<br/>
+                花开的足迹，书写着凡尘的美好，用细腻的心思和轻盈的笔触，播<br/>
+                撒着生命芬芳的花种。在《格言》《意林》《演讲与口才》《做人<br/>
+                与处世》《思维与智慧》《工人日报》《中国教师报》《中国建设<br/>
+                报》等百余家报刊发表作品60余万字。《为你放弃声音的甜美》<br/>
+                《把梦想留给别人》等被多家报刊转载，并被收入《美文》《智慧<br/>
+                满行囊》等青少年智慧与心灵丛书。
+            </p>
+        </ion-item>
+    </ion-list>
+<ion-list class="list-inset">
+        <ion-item>
+            <h2>目录</h2><br/><br/>
+            <p> 第一章 序论</p>
+        </ion-item>
+
+    <ion-item>
+        <p>第二章 儿童发展的基础</p>
+    </ion-item>
+    <ion-item>
+        <p>第三章 儿童感知觉、注意的发展</p>
+    </ion-item>
+    <ion-item>
+        <p>第二章 儿童记忆的发展</p>
+    </ion-item>
+    <ion-item>
+        <h2 class="h2" ui-sref="^.mulu">查看全部目录 </h2>
+        <span class="item-note">共5821章</span>
+    </ion-item>
+</ion-list>
+</ion-content>
+</ion-view>
+

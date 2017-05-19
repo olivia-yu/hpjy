@@ -1,0 +1,74 @@
+
+.serviceContent{
+    padding: 14px;
+    background: #f1eff8;
+}
+.all{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.serviceContent .all p{
+    text-align: center;
+    margin-top: 14px;
+}
+.serviceContent .all img{
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.serviceContent .all span{
+    padding: 14px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+.serviceContent .all span:before{
+    z-index: -1;
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 16px;
+    left: -4px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.serviceFoot .left{
+    width: 70%;
+    float: left;
+    position: relative;
+}
+.serviceFoot .left i{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 7px;
+    right: 12px;
+    background: url("../images/img04/smile.png") no-repeat;
+    background-size: 100%;
+}
+.serviceFoot .left input{
+    background: #f1eff8;
+    width: 98%;
+    border-radius: 3px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.serviceFoot .right{
+    width: 30%;
+    float: right;
+    line-height: 34px;
+}
+.serviceFoot .right button{
+    min-height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    width: 48%;
+    background: #fff;
+    border: 1px #ccc solid;
+}
+

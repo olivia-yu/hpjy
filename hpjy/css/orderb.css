@@ -1,0 +1,62 @@
+.bar .title.title-left{
+    text-align: center;
+}
+.back ion-list.order{
+    background-color: #fff;
+    border:none;
+}
+.first{
+    margin: 0 auto;
+    padding-top: 5px;
+    border:none;
+    border-bottom: 1px dashed #e4e4e4;
+}
+.orbtn{
+    border-bottom: none;
+}
+.order .first .img{
+    width: 30px;
+    vertical-align: middle;
+    margin-left: 35px;
+    margin-right: 10px;
+}
+.font,.img{
+    float: left;
+}
+.font{
+    color: orange;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.fonta{
+    color: #000;
+}
+.fonta span,.fontb span{
+    color: #999;
+}
+.item p.fontb{
+    margin-top: 10px;
+    color: orange;
+}
+.button1{
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+    width: 130px;
+    min-height: 37px;
+    line-height: 0;
+    font-size: 14px;
+}
+.border1{
+    border: 1px solid #ccc;
+    float: left;
+}
+.border2{
+    border:1px solid orange;
+    float: right;
+    color: orange;
+}
+.back{
+    background-color: #F1EFF8;
+}

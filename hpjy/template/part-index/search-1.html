@@ -1,0 +1,71 @@
+<ion-view>
+        <ion-header-bar class="bar-positive item-input-inset serheader">
+            <button class="button button-clear icon icon-right ion-android-arrow-dropdown" ng-click="showAear($event)">郑州</button>
+            <label class="item-input-wrapper">
+                <input type="search" placeholder="找什么呢？搜索试试吧">
+                <i class="icon ion-ios-search"></i>
+            </label>
+        </ion-header-bar>
+    <ion-content class="content">
+        <img src="images/img04/banner.png" alt="" id="banner">
+        <div class="row navOne">
+            <div class="col ban-fir" ui-sref="^.video-1">
+            <span>
+                <img src="images/img04/movie.png" alt="">
+                <p>课件视频</p>
+            </span>
+            </div>
+            <div class="col" ui-sref="^.learning">
+            <span>
+                <img src="images/img04/edu.png" alt="">
+                <p>在线学习</p>
+            </span>
+            </div>
+        </div>
+        <div class="row navTwo">
+            <div class="col ban-fir" ui-sref="^.ed1">
+            <span>
+                <img src="images/img04/note.png" alt="">
+                <p>宏鹏题库</p>
+            </span>
+            </div>
+            <div class="col" ui-sref="^.bookstrip">
+            <span>
+                <img src="images/img04/book2.png" alt="">
+                <p>图书商城</p>
+            </span>
+            </div>
+        </div>
+        <ion-list>
+            <ion-item class="item-divider"></ion-item>
+            <ion-item class="hotone">
+                <h2 class="title topimg"><img src="images/img04/hot1.png" alt="">火热试题</h2>
+                <p>2016年国家公务员《考前大模拟》通关训练试题</p>
+                <span>2016-02-27</span>
+                <button class="button">开始做题</button>
+            </ion-item>
+            <ion-item class="item-divider"></ion-item>
+            <ion-item class="hotone">
+                <h2 class="title topimg"><img src="images/img04/hot.png" alt="">热卖图书</h2>
+                <div class="hotbook">
+                    <i></i>
+                    <p>2015考研思想政治理论复习全书2015考研思想政治</p>
+                    <p class="star"><span><img src="images/img04/star.png" alt="">5.0分</span></p>
+                    <p class="price"><span>价格:￥228.96</span><span>678人付款</span></p>
+                </div>
+            </ion-item>
+            <ion-item class="item-divider"></ion-item>
+            <ion-item class="hotone">
+                <h2 class="title topimg"><img src="images/img04/video.png" alt="">视频推荐专区</h2>
+                <div class="hotvideo">
+                    <i></i>
+                    <p>实战移动互联网营销:互联网+营销的7个关键要素</p>
+                    <p class="price"><span>2369人已试听</span>
+                        <button class="button">免费试听</button>
+                    </p>
+                </div>
+            </ion-item>
+            <ion-item class="item-divider"></ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

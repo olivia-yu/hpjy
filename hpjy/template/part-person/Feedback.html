@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/area_prov.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+        <ion-header-bar class="bar bar-positive">
+            <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+            <h1 class="title">意见反馈</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <div class="card">
+                    <div class="item item-text-wrap itemm">
+                        请在这里填写您对投票的意见，我们将不断改进，感谢支持。
+                    </div>
+                </div>
+
+
+                <ion-item  class="setbutton" >
+                    <button class="button button-block setbuttonn">发表
+                    </button>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function () {
+
+    })
+</script>
+</html>

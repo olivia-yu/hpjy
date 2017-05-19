@@ -1,0 +1,186 @@
+<ion-view  hide-tabs="true">
+	<!--页头-->
+	<ion-header-bar  class="bar-positive">
+		<button class="button button-clear" ng-click="$ionicGoBack()"><i class="button button-clear icon ion-ios-arrow-left"></i></button>
+		<h1 class="title">我的购物车</h1>
+	</ion-header-bar>
+	<!--内容-->
+	<ion-content class="has header"style="background-color:#F1EFF8;">
+		<!--第一个-->
+		<ion-list>
+			<ion-item id="top">
+				<label class="checkbox">
+				    <input type="checkbox" name="" id="">
+				</label>	
+				<img src="images02/book11.png">
+				<p class="p1">胡小闹日记全套6册第3辑新作三 儿童书籍9- 12岁杨红樱系列书 小学生课外阅读书籍</p>
+				<p class="p2">￥64.02 
+					<span id="sl">
+						<a href="" >-</a>
+						<a>1&nbsp;</a>
+						<a href="">+</a>
+					</span>
+				</p>
+		    </ion-item>
+		</ion-list>
+		<!--第二个-->
+		<ion-list>
+			<ion-item id="top"style="margin-top: 15px;">
+				<label class="checkbox">
+			            <input type="checkbox" name="" id="">
+			    </label>	
+			    <img src="images02/book12.png">
+				<p class="p1">【正版包邮】三分管人七分做人 企业经营管理书籍 管理员工团队管理书籍 </p>
+				<p class="p2">￥64.02 
+					<span id="sl">
+						<a href="" >-</a>
+						<a>1&nbsp;</a>
+						<a href="">+</a>
+					</span>
+				</p>
+		    </ion-item>
+		</ion-list>
+<!--第三个-->
+		<ion-list>
+			<ion-item id="top" style="margin-top: 15px;">
+				<label class="checkbox">
+			        <input type="checkbox" name="" id="">
+			    </label>	
+			    <img src="images02/book13.png">
+				<p class="p1">冰心奖获奖系列儿童文学 少年励志小说馆第四辑全册青春校园励志小说读物</p>
+				<p class="p2">￥64.02 
+					<span id="sl">
+						<a href="" >-</a>
+						<a>1&nbsp;</a>
+						<a href="">+</a>
+					</span>
+				</p>
+		    </ion-item>
+		</ion-list>
+		<!--第四个-->
+		<ion-list>
+			<ion-item id="top" style="margin-top: 15px;">
+				<label class="checkbox">
+			        <input type="checkbox" name="" id="">
+			    </label>	
+			    <img src="images02/book14.png">
+				<p class="p1">青少年版世界名著书籍全套装10册 初中生必读名著 昆虫记正版 格列佛游记 童年 </p>
+				<p class="p2">￥64.02 
+					<span id="sl">
+						<a href="" >-</a>
+						<a>1&nbsp;</a>
+						<a href="">+</a>
+					</span>
+				</p>
+		    </ion-item>
+		</ion-list>
+	</ion-content>		
+		<!--底部-->
+		<ion-footer-bar>
+			<div class="row row-top">
+				<div class="col col-25">
+					<label class="checkbox" style="margin-left:-19px;margin-top:-11px;">
+		        	<input type="checkbox" name="" id="">
+		    	</label>
+		    	<span class="all">全选</span>
+				</div>
+		    	<div class="col col-60">
+		    		 <p class="pp">合计：
+				    	<span style="color:#FF8C58;">￥<span>
+				    	<span style="font-size:20px;color:#FF8C58;">0</span>.00
+				    	<span style="color: #333;margin-left:0px;">不含运费</span>
+				    </p>
+		    	</div>
+		    	<div class="col col-25 but">
+		    		 <button class="button button-clearss" id="button">结算(0)</button>
+		    	</div>
+			</div>
+		</ion-footer-bar>	
+</ion-view>	
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+.bar .title{
+	height: 35px;
+}
+#top{
+	padding-left: 0;
+	padding-right: 0;
+}
+.checkbox{
+	float: left;
+	margin-top: 20px;
+	margin-left: -9px;
+}
+.item-checkbox .checkbox{
+	width: 43px;
+}
+.checkbox input, .checkbox-icon{
+	width: 23px;
+	height: 23px;
+	margin-top:6px;
+}
+.item-checkbox{
+	padding-left: 47px;
+}
+.item p{
+	white-space: normal;
+	padding-left: 8px;
+	font-size: 12px;
+	color: #333;
+}
+img{
+	width: 80px;
+	float: left;
+}
+.p1{
+	white-space: normal;
+}
+.p2{
+	margin-top: 5px;
+}
+#sl{
+	float: right;
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+}
+#sl a{
+	display: inline-block;
+	width:29.6%;
+	height: 20px;
+	line-height:20px;
+	text-align: center;
+}
+#sl a:nth-child(1),#sl a:nth-child(3){
+	background-color: #E0E0E0;
+}
+#sl a:nth-child(2){
+	background-color: #F6F6F6;
+}
+.row .row-top{
+	width: 100%;
+}
+.col{
+	padding: 0;
+}
+.all{
+	display: inline-block;
+	margin-top: 3px;
+	margin-left: -29px;
+}
+.but{
+	padding: 0;
+}
+#button{
+	background-color: #FF5000;
+	margin-left: -4px;
+	color: #fff;
+}			
+</style>

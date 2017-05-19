@@ -1,0 +1,49 @@
+
+body {
+    background-color: #f1eff8
+}
+
+#row_a>div:first-child{
+    padding-top: 8px;
+}
+#row_a>div:first-child>img{
+    width: 24px;
+}
+#row_a>div:nth-child(3)>img{
+    width: 28px;
+}
+.itembutton>img{
+    width: 30px;
+    vertical-align: middle;
+}
+.itembutton i{
+    padding-top: 6px;
+    padding-left: 11px;
+}
+.item{
+    padding: 7px 16px;
+}
+.tab-item i.icon {
+    margin-top: 1px;
+}
+.item-divider, .itemdivider{
+    min-height: 6px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+.item-button-right .item-content>.button, .item-button-right .item-content>.buttons, .item-button-right>.button, .item-button-right>.buttons{
+    top:0;
+}
+.list:last-child .fixeddd{
+    width: 80%;
+    height: 35px;
+    margin:  0 auto;
+    background-color: #48474a;
+    position: fixed;
+    bottom: 14px;
+    left: 33px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}

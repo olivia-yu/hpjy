@@ -1,0 +1,128 @@
+
+    <style>
+        .bar .title.title-left{
+            text-align: center;
+        }
+        .back{
+            background-color: #F1EFF8;
+        }
+        .exe-sele{
+            width: 100%;
+            height:44px;
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+        .exe-btn{
+            width: 50%;
+            background-color: #fff;
+            float: left;
+            line-height: 35px;
+            font-size: 15px;
+            min-height: 40px;
+        }
+        .exebefore:before{
+            width: 1px;
+            height: 30px;
+            content: "";
+            background-color: #ccc;
+            position: absolute;
+            left: 158px;
+            top:6px;
+        }
+        .list{
+            background-color: #fff;
+        }
+        .exe-con{
+            width: 93%;
+            margin: 0 auto;
+            border:none;
+            border-bottom: 1px dashed #e4e4e4;
+        }
+        .exe-line{
+            width: 2px;
+            height: 15px;
+            background-color: #ff9900;
+            display: inline-block;
+            float: left;
+            margin-right: 8px;
+        }
+        .exe-con h2{
+            float: left;
+           padding-top: 5px;
+        }
+        .exe-con h2 p{
+            color: #000;
+            /*float: left;*/
+        }
+        .exe-con p.exe-right{
+            float: right;
+            width: 60px;
+            height: 25px;
+            border-radius: 5px;
+            text-align: center;
+            line-height:25px;
+            background-color: #ff9900;
+            color: #fff;
+        }
+        .exe-under{
+            width: 100%;
+            height: 80px;
+            background-color: #F1EFF8;
+        }
+    </style>
+    <ion-view>
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+        <h1 class="title">章节练习</h1>
+    </ion-header-bar>
+
+    <ion-content class="back">
+        <div class="exe-sele">
+            <button class="button exe-btn exebefore">级别<i class="icon ion-android-arrow-dropdown"></i></button>
+            <button class="button exe-btn">年份<i class="icon ion-android-arrow-dropdown"></i></button>
+        </div>
+        <ion-list>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第一章 序论</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第二章 儿童发展的基础</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第三章 儿童感觉、注意的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第四章 儿童记忆的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第五章 儿童思想、思维的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第六章 儿童语言的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第七章 儿童情绪的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第八章 儿童社会性的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-con">
+                <h2><span class="exe-line"></span><p>第九章 儿童个性的发展</p></h2>
+                <p class="exe-right">做题</p>
+            </ion-item>
+            <ion-item class="exe-under"></ion-item>
+        </ion-list>
+    </ion-content>
+    </ion-view>
+
+
+
+

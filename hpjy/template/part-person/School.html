@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>所在学校</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/school.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+        <ion-header-bar class="bar bar-positive">
+            <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+            <h1 class="title">所在学校</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-divider item-input-inset">
+                        <label class="item-input-wrapper">
+                            <i class="icon ion-ios-search-strong placeholder-icon"></i>
+                            <input type="search" placeholder="请输入关键字" >
+                        </label>
+                </ion-item>
+
+                <ion-item class="itembutton itemcolor">
+                  郑州大学
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   河南大学
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                   河南农业大学
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    河南政法大学
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    郑河南轻工业学院
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                  河南师范大学
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    洛阳师范大学
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    信阳师范大学
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    郑州铁路职业学校
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    郑州体育大学
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   郑州经济大学
+                </ion-item>
+                <ion-item class="item-divider"style="text-align: center">
+                    加载更多
+                </ion-item>
+            </ion-list>
+        </ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function () {
+
+    })
+</script>
+</html>

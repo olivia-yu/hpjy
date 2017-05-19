@@ -1,0 +1,12 @@
+.btna,.btnb{
+    min-width: 125px;
+}
+.btna{
+    margin-left: 13px;
+}
+.btnb{
+    margin-right: 15px;
+    margin-left: 13px;
+    background-color: #ff9900;
+    color: #fff;
+}

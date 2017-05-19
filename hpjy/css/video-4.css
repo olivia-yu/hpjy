@@ -1,0 +1,139 @@
+.banner img{
+    width: 100%;
+}
+.banner{
+    position: relative;
+}
+.banner span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.tab{
+    padding: 0px;
+}
+.list .video4{
+    border-style: none;
+    white-space: normal;
+}
+.all p{
+    line-height: 20px;
+}
+.all p img{
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.tab .col{
+    text-align: center;
+    border-bottom: 2px solid #cccccc;
+}
+.tab .blue{
+    color: #387ef5;
+    border-color:#387ef5;
+}
+.cet4 p span{
+    float: right;
+}
+.nav .col{
+    text-align: center;
+}
+.nav .col img{
+    vertical-align: middle;
+    height: 16px;
+    margin-right: 10px;
+}
+.all .pro{
+    font-weight: bold;
+}
+.all i{
+    float: right;
+}
+/*脚部公共样式。。。。。。。。。。*/
+ion-footer-bar.down-shop.bar{
+    padding: 0px;
+}
+ion-footer-bar.down-shop{
+    height: 55px;
+}
+ion-footer-bar.down-shop a {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    color: #444;
+}
+ion-footer-bar.down-shop a img {
+    height: 20px;
+}
+ion-footer-bar.down-shop .row{
+    padding: 0px;
+}
+ion-footer-bar.down-shop .col{
+    padding: 0px;
+}
+
+.foot .col{
+    text-align: center;
+}
+.foot .right{
+    border-left: 1px solid #cccccc;
+}
+.foot .col img{
+    margin-top: 8px;
+    height: 16px;
+}
+.shopcart{
+    line-height: 55px;
+    background: #FF9900;
+    color: #fff;
+}
+.pay{
+    line-height: 55px;
+    background: #ff0000;
+    color: #fff;
+}
+
+.write img{
+    margin: 4px 14px 0 0px;
+    height: 21px;
+    float: left;
+}
+.write{
+    text-align: left;
+}
+.write input{
+    float: left;
+}
+.pinlun{
+    position: relative;
+    padding-left: 65px;
+}
+.pinlun div{
+    margin-top: 20px;
+}
+.pinlun h2{
+    color: #ccc;
+}
+.pinlun h2 span{
+    float: right;
+}
+.pinlun i{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.i1{
+    background: url("../images/img04/wei1.png") no-repeat;
+    background-size: 100%;
+}
+.i2{
+    background: url("../images/img04/wei2.png") no-repeat;
+    background-size: 100%;
+}
+.i3{
+    background: url("../images/img04/wei3.png") no-repeat;
+    background-size: 100%;
+}

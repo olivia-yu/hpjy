@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        ion-content {
+            background: #f1eff8;
+        }
+
+        .row {
+            background: #fff;
+        }
+
+        .con p span {
+            float: right;
+        }
+
+        .pic i {
+            width: 100%;
+            display: inline-block;
+            font-size: 180%;
+            text-align: center;
+            margin-top: 100%;
+        }
+
+        .bookseil {
+            height: 115px;
+            padding-left: 100px;
+            position: relative;
+        }
+
+        .bookseil i {
+            width: 80px;
+            height: 100px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: url("images/book3.png") no-repeat;
+            background-size: 100%;
+        }
+
+        .price {
+            margin-top: 45px;;
+        }
+
+        .price span {
+            float: right;
+        }
+
+        .item {
+            border-style: none;
+            padding: 14px 0;
+            white-space: normal;
+        }
+
+        .item.all {
+            padding-left: 14px;
+            padding-right: 14px;
+            border-top: 1px dashed #cccccc;
+        }
+        .all span{
+            float: right;
+        }
+        .all input{
+            display: inline-block;
+            margin-left: 16px;
+            height: 18px;
+        }
+        .jif{
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .all {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .bar-footer {
+            height: 55px;
+        }
+
+        .bar {
+            padding: 0px;
+        }
+
+        .foot {
+            padding: 0px;
+        }
+
+        .foot .col {
+            text-align: center;
+        }
+
+        .foot .num {
+            text-align: right;
+            line-height: 45px;
+            padding-right: 14px;
+        }
+
+        .foot .num span {
+            color: #ff2727;
+        }
+        .pay {
+            line-height: 45px;
+            background: #FF9900;
+            color: #fff;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class="bar-positive">
+    <button class="button button-clear icon ion-chevron-left"></button>
+    <h1 class="title">确认订单</h1>
+</ion-header-bar>
+<ion-content>
+    <div class="row">
+        <div class="col col-10 pic">
+            <i class="icon ion-ios-location-outline"></i>
+        </div>
+        <div class="col">
+            <div class="con">
+                <p>收货人:倪小爽 <span>13503851191</span></p>
+                <div>收货地址:河南省郑州市金水区花园路与农业路交叉口郑商招商大厦2105</div>
+            </div>
+        </div>
+        <div class="col col-10 pic">
+            <i class="icon ion-ios-arrow-right"></i>
+        </div>
+    </div>
+    <ion-list>
+        <ion-item class="item-divider"></ion-item>
+    </ion-list>
+    <div class="row">
+        <div class="col bookseil">
+            <i></i>
+            <p>高等学研究生英语系列教材:综合教程(上)提高宏鹏教育王晓琳老师编</p>
+            <p class="price">￥68.56 <span>x1</span></p>
+        </div>
+    </div>
+    <ion-list>
+        <ion-item class="all">
+            购买数量 <span>-1+</span>
+        </ion-item>
+        <ion-item class="all">
+            配送方式 <span>快递12.00</span>
+        </ion-item>
+        <ion-item class="all">
+            买家留言 <input type="text" placeholder="选填，可填写你的要求">
+        </ion-item>
+        <ion-item class="item-divider"></ion-item>
+        <ion-item class="jif">
+            可用598积分抵￥5.98
+        </ion-item>
+    </ion-list>
+</ion-content>
+<ion-footer-bar>
+    <div class="row foot">
+        <div class="col num">合计:￥<span>70.56</span></div>
+        <div class="col col-25 pay">提交订单</div>
+    </div>
+</ion-footer-bar>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function ($scope) {
+
+    })
+</script>
+</html>

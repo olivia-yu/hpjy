@@ -1,0 +1,15 @@
+
+
+.tab-item i.icon {
+    margin-top: 1px;
+}
+.item-input-wrapper{
+    background-color: #fff;
+    border-radius: 25px;
+}
+.itembutton{
+    color: #6a6a6a;
+}
+.itemcolor{
+    border: 1px dotted #ccc;
+}

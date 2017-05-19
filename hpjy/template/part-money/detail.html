@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css" />
+		<script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+		
+		<style>
+			.tit{
+				width:100%;
+				text-align: center;
+				padding-top:10px;
+				font-size: 12px;
+				
+			}
+			.picb{
+				width:100%;
+			}
+			.picb>img{
+				width:100%;
+				padding-left:10px;
+				padding-right:10px;
+			}
+			.cont{
+				text-indent:2em;
+				line-height: 2em;
+				font-size: 12px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+			.cont2{
+				text-indent:2em;
+				line-height: 2em;
+				font-size: 12px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<!--头部-->
+		<ion-header-bar class="bar-positive">
+			<button class="button icon-left ion-ios-arrow-left button-clear button-clam"></button>
+			<h1 class="title">我的任务</h1>
+		</ion-header-bar>
+
+		<!--内容-->
+		<ion-content class="has-header">
+			<p class="tit">2016年英语四级考试公告</p>
+			<p class="picb"><img src="images/picf.png" alt=""/></p>
+			<p class="cont">根据历次英语四级考试报名时间安排，2016年6月英语四级报名时间于3月18日开始；请广大考生密切关注考试在线网，我们将及时抢先发布英语四级报名最新动态，敬请关注</p>
+			<p class="cont2">报名方式一般为各院校班级统一报名或网上报名，报名网址为院校的教务处或者教育考试院网站。报名具体方法以院校或者考试院的报名通知为准。以学校为单位自愿参加，集体报名；考试日若考生在外实习，仍应在所在地学校报名；报名截止后，不再接收报名。</p>
+		</ion-content>
+
+	</body>
+	<script>
+		var app=angular.module("myApp",["ionic"]);
+		app.controller("myCtrl",function(){
+			
+		})
+	</script>
+	
+</html>

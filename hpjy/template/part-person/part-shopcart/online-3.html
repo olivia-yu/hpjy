@@ -1,0 +1,55 @@
+<ion-view>
+		<!--页头-->
+		<ion-header-bar  class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">在线报班</h1>
+		</ion-header-bar>
+		<!--内容-->
+		<ion-content style="background: #F1EFF8;">
+			<ion-list>
+				<ion-item>
+					<p class="p1">2016教师资格证报班学习</p>
+					<div>
+						<p class="p2">教育学+教育心理学+普通话证+试讲=教师资格证。</p>
+					    <p class="p2" style="margin-top: 15px;">教师制度是国家法定的职业许可制度。随着教育市场的逐步加快，我国对教师的需求也越来越大，教师也成为十大高薪行业，其工资待遇不低于当地公务员水平。</p>
+						<p class="p2">目前，教师职业已成为毕业生和社会人士就业时的最佳选择。然而，许多人因为缺少教师资格证而错失良机，为了帮助广大考生顺利通过教师资格证考试，早日实现心中的教师梦，特举办此次教师资格证考试辅导！在校大学生和已毕业人士均可参加教师资格证的考试，教师资格证全国通用，证书终身有效，不需年检。是从事教育行业的必备证件。</p>
+					</div>
+					<div class="fot">
+						<p>【报名时间】：即日起9：00—17：30（周六、日不休）</p>
+						<p>【上课地点】：首都师范大学</p>
+						<p>【报名资料】：身份证复印件一张、1寸免冠蓝底相片3张</p>
+					</div>
+				</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item id="butt">
+					<button class="button button-block" ui-sref="^.online-4">立即报班</button>
+				</ion-item>
+			</ion-list>
+		</ion-content>
+</ion-view>			
+<style type="text/css">
+		.item p{
+			white-space: normal;
+			line-height: 2;
+			color: #333;
+			font-size:13px;
+		}
+		.item .p1{
+			font-size: 16px;
+			text-align: center;
+		}
+		.item .p2{
+			text-indent: 24px;
+		}
+		.fot{
+			margin-top: 30px;
+		}
+		.button.button-block, .button.button-full{
+			background-color: #FF9900;
+			color: #fff;
+		}
+		#butt{
+			border: 0;
+		}
+</style>

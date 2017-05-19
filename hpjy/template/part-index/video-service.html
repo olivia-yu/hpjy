@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        ion-content{
+            padding: 14px;
+            background: #f1eff8;
+        }
+        .all{
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .all p{
+            text-align: center;
+            margin-top: 14px;
+        }
+        .all img{
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .all span{
+            padding: 14px;
+            display: inline-block;
+            background: #fff;
+            border-radius: 8px;
+            position: relative;
+        }
+        .all span:before{
+            z-index: -1;
+            content: "";
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 16px;
+            left: -4px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
+        .left{
+            width: 70%;
+            float: left;
+            position: relative;
+        }
+        .left i{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            display: block;
+            top: 7px;
+            right: 12px;
+            background: url("images/smile.png") no-repeat;
+            background-size: 100%;
+        }
+        .left input{
+            background: #f1eff8;
+            width: 98%;
+            border-radius: 3px;
+            padding-left: 14px;
+            padding-right: 20px;
+        }
+        .right{
+            width: 30%;
+            float: right;
+            line-height: 34px;
+        }
+        .right button{
+            min-height: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            width: 48%;
+            background: #fff;
+            border: 1px #ccc solid;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-chevron-left"></button>
+        <h1 class="title">客服</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="all">
+            <p>16:28:39</p>
+            <div><img src="images/kefu.png" alt=""><span>您好，请问有什么可以帮助你的？</span></div>
+        </div>
+    </ion-content>
+    <ion-footer-bar>
+        <div class="left"><input type="text"><i></i></div>
+        <div class="right">
+            <button>发表</button>
+            <button>取消</button>
+        </div>
+    </ion-footer-bar>
+</body>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function($scope){
+
+    })
+</script>
+</html>

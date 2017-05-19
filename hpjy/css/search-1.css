@@ -1,0 +1,91 @@
+.bar.item-input-inset .item-input-wrapper {
+    background: #fff;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.bar.item-input-inset .item-input-wrapper input {
+    background: #fff;
+    color: #ccc;
+    border-radius: 15px;
+}
+.bar.item-input-inset .item-input-wrapper i {
+    color: #ccc;
+}
+#banner {
+    width: 100%;
+}
+.content .row+.row{
+    margin-top: 0px;
+}
+.content .row{
+    padding: 0px;
+}
+.navOne {
+    margin-top: -6px;
+    border-bottom: 1px solid #cccccc;
+}
+.ban-fir {
+    border-right: 1px solid #cccccc;
+}
+.hotone p {
+    line-height: 30px;
+}
+.hotone .button {
+    background: orange;
+    color: #fff;
+    outline: none;
+    float: right;
+    min-height: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.topimg img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.hotbook {
+    padding-left: 110px;
+    position: relative;
+    height: 130px;
+}
+.hotbook i {
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("../images/img04/book.png") no-repeat;
+    background-size: 100%;
+}
+.hotbook .star {
+    margin-top: 15px;
+    color: orange;
+}
+.hotbook .price {
+    margin-top: 15px;
+}
+.hotbook .price > span:first-child {
+    color: red;
+}
+.hotbook .price > span:last-child {
+    margin-left: 25px;
+}
+.hotbook img {
+    margin-right: 10px;
+    height: 14px;
+}
+.hotvideo {
+    padding-left: 110px;
+    position: relative;
+}
+.hotvideo i {
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("../images/img04/pic1.png") no-repeat;
+    background-size: 100%;
+}

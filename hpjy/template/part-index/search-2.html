@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .locaton{}
+
+        .locaton img{
+            margin-right: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear icon ion-chevron-left"></button>
+        <h1 class="title">位置</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-divider">当前城市</ion-item>
+            <ion-item class="locaton">
+                <i><img src="images/location.png" alt=""></i>
+                河南郑州
+            </ion-item>
+            <ion-item class="item-divider">全部</ion-item>
+            <ion-item>河南</ion-item>
+            <ion-item>北京</ion-item>
+            <ion-item>上海</ion-item>
+            <ion-item>西安</ion-item>
+            <ion-item>湖南</ion-item>
+            <ion-item>河北</ion-item>
+            <ion-item>河南</ion-item>
+            <ion-item>贵州</ion-item>
+            <ion-item>陕西</ion-item>
+            <ion-item>广州</ion-item>
+            <ion-item>香港</ion-item>
+            <ion-item>其他</ion-item>
+        </ion-list>
+    </ion-content>
+</body>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl",function($scope){
+
+    })
+</script>
+</html>

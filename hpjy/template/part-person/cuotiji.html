@@ -1,0 +1,58 @@
+
+    <style>
+        body{
+            background-color: #F1EFF8;
+        }
+        .button.button-energized{
+            margin-top: 35px;
+        }
+        .item p{
+            margin-top: 17px;
+            font-size: 17px;
+        }
+        .error{
+            color: red;
+        }
+        meter{
+            height: 10px;
+            width: 40%;
+            margin-right: 18px;
+        }
+        .item{
+            margin-top: 10px;
+
+        }
+    </style>
+
+<ion-view>
+<ion-header-bar class="bar-positive">
+    <button class=" button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    <h2 class="title">错题集</h2>
+</ion-header-bar>
+<ion-content>
+    <div class="button-bar">
+        <button class="button">级别<i class="icon ion-android-arrow-dropdown" ></i></button>
+        <button class="button">全部<i class="icon ion-android-arrow-dropdown" ></i></button>
+    </div>
+    <ion-list>
+        <ion-item class="item-button-right">
+          <span>单选题</span>
+            <button class="button button-light"><i class="error">错题：3</i>/已做36</button>
+          <p>错误率 <meter value="20" min="1" max="100"></meter>10%</p>
+            <button class="button button-energized">重做</button>
+        </ion-item>
+        <ion-item class="item-button-right">
+        <span>多选题</span>
+        <button class="button button-light"><i class="error">错题：3</i>/已做36</button>
+        <p>错误率 <meter value="8" min="1" max="100"></meter>8%</p>
+        <button class="button button-energized">重做</button>
+    </ion-item>
+        <ion-item class="item-button-right">
+            <span>问答题</span>
+            <button class="button button-light"><i class="error">错题：3</i>/已做36</button>
+            <p>错误率 <meter value="25" min="1" max="100"></meter>25%</p>
+            <button class="button button-energized">重做</button>
+        </ion-item>
+    </ion-list>
+</ion-content>
+</ion-view>

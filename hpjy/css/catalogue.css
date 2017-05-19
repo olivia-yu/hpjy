@@ -1,0 +1,14 @@
+.bar .title.title-left{
+    text-align: center;
+}
+.back{
+    background-color: #f1eff8;
+}
+.back .list .item-icon-right{
+    width: 92%;
+    margin: 0 auto;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}

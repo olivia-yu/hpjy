@@ -1,0 +1,55 @@
+<ion-view hide-tabs="true">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+        <h1 class="title">章节练习</h1>
+    </ion-header-bar>
+
+    <ion-content class="back">
+        <ion-list class="examb">
+            <ion-item class="exami">
+                <img src="images/img/clock.png" alt="" class="top-img">
+                <span class="font">01:59:38</span>
+                <button class="button fir">1/33</button>
+            </ion-item>
+            <ion-item class="itema">
+                <div class="itemtitle">
+                    <p>下列成语运用哪项正确（<span>B</span>）</p>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item class="cont-box">
+                <ion-checkbox class="cont"></ion-checkbox>
+                <p class="rigfont">
+                    A、冬天老人要增加营养，也要适当运动，在户外锻炼时一定要适可而止，以步行为宜
+                    ，时间最好选在傍晚，还要注意保暖，防止着凉。
+                </p>
+            </ion-item>
+            <ion-item class="cont-box">
+                <ion-checkbox class="cont next" ng-repeat="item in items" ng-model="item.selected"></ion-checkbox>
+                <p class="rigfont">
+                    B、时间真如行云如水，申奥成功的情景仿佛就在昨天，转眼间，举世瞩目的
+                    北京奥运会距离我们已经不到一百天了。
+                </p>
+            </ion-item>
+            <ion-item class="cont-box">
+                <ion-checkbox class="cont next"></ion-checkbox>
+                <p class="rigfont">
+                    C、有段时间，沪深股市指数波动非常大，有时一天上涨几百点，有时
+                    一天下跌几百点，涨跌幅度之大令人叹为观止。
+                </p>
+            </ion-item>
+            <ion-item class="cont-box under">
+                <ion-checkbox class="cont next"></ion-checkbox>
+                <p class="rigfont">
+                   D、环境专家试图用向湖里放鱼的方法治理湖水污染，因为这里的渔业资源
+                    已经到了竭泽而渔的地步。
+                </p>
+            </ion-item>
+            <ion-item class="foter">
+                <button class="button btn1">上一题</button>
+                <button class="button button-positive btn2" ui-sref="^.exama">下一题</button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

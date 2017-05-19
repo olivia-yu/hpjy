@@ -1,0 +1,65 @@
+.bar .title.title-left{
+    text-align: center;
+}
+.button.button-block, .button.button-full{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.button.button-dark.button-clear{
+    color:#222;
+}
+.hed{
+    width:93%;
+    height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px dotted #e4e4e4;
+    overflow: hidden;
+}
+.learn-left{
+    float: left;
+}
+.learn-right{
+    float: right;
+    color: #ff9900;
+}
+.learfir{
+    margin-top: 32px;
+    border-width: 0;
+    white-space: normal;
+    text-indent: 2rem;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.learfir1{
+    border-width: 0;
+    white-space: normal;
+    text-indent: 2rem;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.learfooter{
+    margin-top: 80px;
+}
+.buttona{
+    min-height: 34px;
+    line-height: 34px;
+    width: 88px;
+    text-align: center;
+    margin-top: 7px;
+}
+.kf{
+    background-color: #ff9900;
+    text-align: center;
+}
+.fotimg{
+    width: 20px;
+    position: absolute;
+    top:5px;
+    left: 258px;
+}
+.fotfont{
+    position: absolute;
+    top:30px;
+    left: 244px;
+    color: #fff;
+}

@@ -1,0 +1,7 @@
+			/*.item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p { 	    
+			    overflow:visible; 
+			    text-overflow: ellipsis;
+			    white-space:normal; 
+				font-size: 12px;	
+
+			}*/

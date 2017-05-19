@@ -1,0 +1,27 @@
+
+			.teacher{
+				float: left;
+				margin-top:13px;
+			}
+			.watch{
+				float: right;
+				margin-top:13px;
+				width:57px;
+				height:25px;
+				background-color: #ff5000;
+				color:white;
+								
+			}
+			.item-thumbnail-left, .item-thumbnail-left .item-content {
+			
+			    padding-left: 106px;
+			    min-height: 92px;
+			}
+			.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    padding-left: 101px;
+			    line-height: 28px;
+			    border:none;			    
+			}
+			

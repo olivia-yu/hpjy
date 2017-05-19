@@ -1,0 +1,95 @@
+.bar .title.title-left{
+    text-align: center;
+}
+.back{
+    background-color: #f1eff8;
+}
+.one,.one1{
+    width: 42%;
+    height:25%;
+    background-color: #fff;
+    border:2px solid #7c9eb9;
+    border-radius: 15px;
+    margin: 16px 0 0 17px;
+}
+.one{
+    float: left;
+}
+.one1{
+    float: right;
+    margin-right: 17px;
+}
+.retitle{
+    margin: 15px 15px 0;
+}
+.garde{
+    margin-top: 15px;
+    font-size: 27px;
+    color: #ff9900;
+    margin-left: 35px;
+}
+.garde span{
+    font-size: 16px;
+}
+.garde1{
+    margin-top: 15px;
+    font-size: 27px;
+    color: #69d297;
+    margin-left: 10px;
+}
+.garde1 span{
+    font-size: 16px;
+}
+.fal{
+    margin-left: 36px;
+}
+.garde2{
+    margin-top: 15px;
+    font-size: 28px;
+    color: #fe6046;
+    margin-left: 45px;
+}
+.garde2 span{
+    font-size: 16px;
+}
+.succ,.error{
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.succ i,.error i{
+    margin-right: 5px;
+}
+.error{
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.ion-ios-checkmark:before{
+    color: #40cb7e;
+}
+.ion-ios-close:before{
+    color:#fe6046;
+}
+.under1{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+.foter{
+    border: none;
+    background-color: #f1eff8;
+}
+.btna{
+    margin-right: 3px;
+}
+.btna,.btnb{
+    min-width: 135px;
+}
+.btnb{
+    margin-right: 15px;
+    margin-left: 13px;
+    background-color: #ff9900;
+    color: #fff;
+}

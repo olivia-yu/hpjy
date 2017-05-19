@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .bar.item-input-inset .item-input-wrapper {
+            background: #fff;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+        .bar.item-input-inset .item-input-wrapper input {
+            background: #fff;
+            color: #ccc;
+            border-radius: 15px;
+        }
+        .bar.item-input-inset .item-input-wrapper i {
+            color: #ccc;
+        }
+        .item{
+            border-style: none;
+        }
+        .col{
+            padding: 0px;
+            text-align: center;
+        }
+        .col i{
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        .row{
+            padding: 0px;
+        }
+        .row .left{
+            border-right: #ccc solid 1px;
+        }
+        .item.all{
+            height: 100px;
+            margin: 0 16px;
+            border-bottom: 1px dashed #cccccc;
+            padding: 16px 0px;
+            font-size: 14px;
+        }
+        .hotvideo{
+            padding-left: 115px;
+            position: relative;
+        }
+        .hotvideo i{
+            width: 105px;
+            height: 70px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .hotvideo .i1{
+            background: url("images/video1.png") no-repeat;
+            background-size: 100%;
+        }
+        .hotvideo .i2{
+            background: url("images/pic1.png") no-repeat;
+            background-size: 100%;
+        }
+        .hotvideo .i3{
+            background: url("images/video2.png") no-repeat;
+            background-size: 100%;
+        }
+        .hotvideo .i4{
+            background: url("images/video3.png") no-repeat;
+            background-size: 100%;
+        }
+        .hotvideo .i5{
+            background: url("images/video-4.png") no-repeat;
+            background-size: 100%;
+        }
+        .hotvideo .button{
+            background: orange;
+            color: #fff;
+            outline: none;
+            float: right;
+            min-height: 28px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .hotvideo .price{
+            margin-top: 20px;
+        }
+        .hotvideo span.hot{
+            color: red;
+            margin-right: 10px;
+        }
+        .item-divider p{
+            text-align: center;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class="bar-positive item-input-inset">
+    <button class="button button-clear icon ion-chevron-left">
+    </button>
+    <label class="item-input-wrapper">
+        <input type="search" placeholder="找什么呢？搜索试试吧">
+        <i class="icon ion-ios-search"></i>
+    </label>
+    <button class="button button-clear icon ion-ios-cart-outline">
+    </button>
+</ion-header-bar>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <div class="row">
+                <div class="col col-50 left">全部学段<i class="icon ion-android-arrow-dropdown"></i></div>
+                <div class="col col-50" ng-click="showPri($event)">默认排序<i class="icon ion-android-arrow-dropdown"></i></div>
+            </div>
+        </ion-item>
+        <ion-item class="item-divider"></ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i1"></i>
+                <p>专业手绘插画一对一视频教学专业化绘画基本准则</p>
+                <p class="price"><span>2369人已试听</span><button class="button">免费试听</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i2"></i>
+                <p>实战移动互联网营销:互联网+营销的7个关键要素</p>
+                <p class="price"><span class="hot">￥236</span><span>2369人已试听</span><button class="button">点击学习</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i3"></i>
+                <p>BEC商务英语中、高级连读【随到随学班】超实用职场英语</p>
+                <p class="price"><span>2369人已试听</span><button class="button">免费试听</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i4"></i>
+                <p>包含各专业医师资格笔试考试的全部课程内容</p>
+                <p class="price"><span class="hot">￥236</span><span>2369人已试听</span><button class="button">点击学习</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i5"></i>
+                <p>中小学九年义务教育，课程视频辅导家教辅导</p>
+                <p class="price"><span class="hot">￥236</span><span>2369人已试听</span><button class="button">点击学习</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="all">
+            <div class="hotvideo">
+                <i class="i1"></i>
+                <p>专业手绘插画一对一视频教学专业化绘画基本准则</p>
+                <p class="price"><span>2369人已试听</span><button class="button">免费试听</button></p>
+            </div>
+        </ion-item>
+        <ion-item class="item-divider">
+            <p class="more">加载更多</p>
+        </ion-item>
+    </ion-list>
+</ion-content>
+</body>
+<script>
+    var app=angular.module("myApp",["ionic"]);
+    app.controller("myCtrl", function ($scope, $ionicPopover) {
+        $ionicPopover.fromTemplateUrl("template/video/showPri.html",
+                {
+                    scope: $scope,
+                    animate: "slide-in-up"
+                })
+                .then(function (modal) {
+                    $scope.dialog = modal;
+                });
+        $scope.showPri=function(e){
+            $scope.dialog.show(e)
+        }
+    })
+</script>
+</html>

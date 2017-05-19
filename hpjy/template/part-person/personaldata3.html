@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<ion-header-bar class="bar bar-positive">
+    <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+    <h1 class="title">个人资料</h1>
+</ion-header-bar>
+<ion-content>
+    <ion-list>
+        <ion-item class="item-avatar-right">
+            <img src="images/0.jpg"
+                 alt=""style="vertical-align: middle">
+            头像
+        </ion-item>
+        <ion-item class="item-button-right">
+            昵称
+            <button class="button button-clear button-dark " style="font-size:12px;">一朵阳光花
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+        <ion-item class="item-button-right">
+            地区
+            <button class="button button-clear button-dark " style="font-size:12px;">河南省郑州市金水区
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+        <ion-item class="item-button-right">
+            所在学校
+            <button class="button button-clear button-dark " style="font-size:12px;">郑州大学
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+        <ion-item class="item-button-right">
+            是否有普通话证
+            <button class="button button-clear button-dark " style="font-size:12px;"ng-click="openmo($index)">是
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+
+        <ion-item class="item-divider"></ion-item>
+
+        <ion-item class="item-button-right">
+            地址管理
+            <button class="button button-clear button-dark " style="font-size:12px;">
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+        <ion-item class="item-button-right">
+            修改密码
+            <button class="button button-clear button-dark " style="font-size:12px;">
+                <span class="icon ion-ios-arrow-right" style="margin-left: 5px;"></span></button>
+        </ion-item>
+    </ion-list>
+</ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function ($scope,$ionicActionSheet) {
+        // 点击按钮触发，或一些其他的触发条件
+        $scope.openmo = function() {
+            // 显示操作表
+            $ionicActionSheet.show({
+                buttons: [
+                    { text: '是' },
+                    { text: '否' },
+                ],
+                buttonClicked: function(index) {
+                    return true;
+                }
+            });
+
+        };
+    })
+</script>
+</html>

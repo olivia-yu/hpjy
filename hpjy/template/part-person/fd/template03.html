@@ -1,0 +1,53 @@
+<ion-popover-view>
+    <!--<ion-footer-bar class="bar-dark tabs tabs-icon-top">-->
+    <div class="tabs tabs-icon-top tabs-dark">
+        <a class="tab-item">
+            <img  class="icon" src="images/page10-1.png" alt="">
+            <p>目录</p>
+        </a>
+        <a  class="tab-item">
+            <img class="icon " src="images/page10-2.png" alt="">
+            <p>离线小说</p>
+        </a>
+        <a class="tab-item">
+            <img class="icon" src="images/page10-3.png" alt="">
+            <p>夜间模式</p>
+        </a>
+        <a  class="tab-item">
+            <img class="icon" src="images/page10-4.png" alt="">
+            <p>阅读选项</p>
+        </a>
+    </div>
+    <!--</ion-footer-bar>-->
+</ion-popover-view>
+
+
+<style>
+    .popover{
+        position:absolute;
+        width:320px;
+        height:120px;
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 1px 3px rgba(0,0,0,0);
+    }
+    .platform-ios .popover {
+        box-shadow: 0 0 40px rgba(0,0,0,0);
+        border-radius: 0;
+    }
+    .platform-ios .popover-arrow {
+        height:0;
+    }
+    .tabs{
+        padding:0 0;
+        height:85px;
+        bottom: -398px;
+        left: 6px;
+    }
+    .popover-backdrop.active {
+        background-color: rgba(0,0,0,0);
+    }
+    .tab-item .icon {
+        padding-bottom: 10px;
+        margin: 20px auto 0;
+    }
+</style>

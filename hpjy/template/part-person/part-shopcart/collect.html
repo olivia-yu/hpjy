@@ -1,0 +1,113 @@
+<ion-view>
+		<!--页头-->
+		<ion-header-bar  class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">我的收藏</h1>
+		</ion-header-bar>
+		<div class="bar bar-subheader">
+			<ul>
+				<li class="on">图书</li>
+				<li ui-sref="^.collect-2">视频</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<ion-content class="has-header has-subheader" style="background: #F1EFF8;">
+			<ion-list>
+				<ion-item class="item-thumbnail-left">
+					<img src="images02/book15.png">
+					<p>《牵着蜗牛散步》王一梅童话系列 注音版一年级课外书二年级必读</p>
+					<span class="ss">价格：  ￥58元</span>
+					<p class="pp">
+						<img src="images02/start2.png" class="pic">
+						<span class="s1">5.0分</span>
+						<span class="s2">2369人已付款</span>
+					</p>
+				</ion-item>
+				<ion-item class="item-thumbnail-left" style="border: 0;">
+					<img src="images02/book16.png">
+					<p>《牵着蜗牛散步》王一梅童话系列 注音版一年级课外书二年级必读</p>
+					<span class="ss">价格：  ￥58元</span>
+					<p class="pp">
+						<img src="images02/start3.png" class="pic">
+						<span class="s1">4.0分</span>
+						<span class="s2">2369人已付款</span>
+					</p>
+				</ion-item>
+				<ion-item class="item-thumbnail-left" style="border: 0;">
+					<img src="images02/book17.png">
+					<p>《牵着蜗牛散步》王一梅童话系列 注音版一年级课外书二年级必读</p>
+					<span class="ss">价格：  ￥58元</span>
+					<p class="pp">
+						<img src="images02/start2.png" class="pic">
+						<span class="s1">5.0分</span>
+						<span class="s2">2369人已付款</span>
+					</p>
+				</ion-item>
+				<ion-item class="item-thumbnail-left" id="last">
+					<img src="images02/book18.png">
+					<p>《牵着蜗牛散步》王一梅童话系列 注音版一年级课外书二年级必读</p>
+					<span class="ss">价格：  ￥58元</span>
+					<p class="pp">
+						<img src="images02/start3.png" class="pic">
+						<span class="s1">4.0分</span>
+						<span class="s2">2369人已付款</span>
+					</p>
+				</ion-item>
+			</ion-list>
+			<div class="load">
+				<p>加载更多</p>
+			</div>
+		</ion-content>	
+</ion-view>		
+<style type="text/css">
+		ul,li{
+			list-style: none;
+		}
+		ul{
+			width: 100%;
+			line-height: 34px;
+			text-align: center;
+		}
+		li{
+			float: left;
+			width: 50%;
+			text-align: center;
+			height: 39px;
+		}
+		.on{
+			border-bottom:1px solid #057ECF;
+			color:#057ECF ;
+		}
+		.item p{
+			white-space: normal;
+		}
+		.pic{
+			width: 75px;
+		}
+		.ss{
+			font-size: 13px;
+			color: #FF0000;
+		}
+		.pp{
+			margin-top: 5px;
+		}
+		.s1{
+			margin-left: 5px;
+		}
+		.s2{
+			float: right;
+		}
+		#last{
+			border: 0;
+			border-bottom:1px solid #ccc;
+		}
+		.load{
+			height: 30px;
+			text-align: center;
+			color: #ccc;
+		}
+		.load p{
+			height: 30px;
+			line-height: 30px;
+		}
+</style>

@@ -1,0 +1,70 @@
+<ion-view  hide-tabs="true">
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear"><i class="icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></i></button>
+        <h1 class="title">确认订单</h1>
+    </ion-header-bar>
+
+    <ion-content class="back">
+        <ion-list>
+            <ion-item>
+                <img src="images/img/dt.png" alt="" class="img">
+                <h2 class="item-center">
+                    <span class="span-left">收货人：倪小爽</span>
+                    <span class="span-right">13503851191</span>
+                </h2>
+                <p class="address">收货地址：河南省郑州市金水区花园路与农业路交叉口郑州招银大厦2105</p>
+                <button class="button button-clear btn-tb"><i class="icon ion-ios-arrow-right"></i></button>
+            </ion-item>
+        </ion-list>
+        <div class="line"></div>
+        <ion-list>
+            <ion-item class="gary-bg">
+                <img src="images/img/book.png" alt="" class="book-img">
+                <h2 class="int">
+                    <p class="int-font">
+                        高等学院研究生英语系列教材：综合教程（上）提高宏鹏教育王晓玲老师编
+                    </p>
+                    <p class="int1">
+                        <span class="span-left1">￥68.56</span>
+                        <span class="span-right1">x1</span>
+                    </p>
+                </h2>
+            </ion-item>
+            <iom-item>
+                <div class="box">
+                    <h4 class="count">购买数量</h4>
+                    <p class="count-right">
+                        <span class="reduce">-</span>
+                        <span class="number">1</span>
+                        <span class="add">+</span>
+                    </p>
+                </div>
+                <div class="box">
+                    <h4 class="count">配送方式</h4>
+                    <p class="count-right1">快递 12.00</p>
+                </div>
+                <div class="box">
+                    <h4 class="count">买家留言</h4>
+                    <p class="count-right2">选填，可填写你的要求</p>
+                </div>
+                <div class="box">
+                    <h4 class="count">可用598积分抵￥5.98</h4>
+                    <div class="item item1 item-toggle">
+                        <label class="toggle toggle-positive">
+                            <input type="checkbox">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </iom-item>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="check">
+        <div class="row foot">
+            <div class="col num">合计:￥<span>70.56</span></div>
+            <div class="col col-25 pay" ng-click="openModal($event)">提交订单</div>
+        </div>
+    </ion-footer-bar>
+</ion-view>

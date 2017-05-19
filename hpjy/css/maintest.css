@@ -1,0 +1,26 @@
+			.count{
+				float: left;
+			}
+			.continue{
+				float: right;
+				width :57px ;
+				height:20px;
+				background-color: #ff5000;
+				color:#fff;
+			}
+
+			.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			     padding-left: 0px;
+			    line-height: 28px;
+			    border: none;
+			}
+
+			.study {
+			     float: right; 
+			     padding-top: 40px; 
+			     width: 57px;
+			     height: 20px; 
+			     line-height: 20px;
+			}

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/video-1.css">
+    <link rel="stylesheet" href="css/search-1.css">
+    <link rel="stylesheet" href="css/video-2.css">
+    <link rel="stylesheet" href="css/video-3.css">
+    <link rel="stylesheet" href="css/video-4.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/orderb.css">
+    <link rel="stylesheet" href="css/learn.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+    <link rel="stylesheet" href="css/exam.css">
+    <link rel="stylesheet" href="css/exama.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/video-service.css">
+    <!--...........................................................个人中心-->
+    <link rel="stylesheet" href="css/area_prov.css">
+    <link rel="stylesheet" href="css/school.css">
+    <link rel="stylesheet" href="css/set_up.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <!--.................06......-->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mainvideo.css" />
+    <link rel="stylesheet" href="css/mainstudy.css" />
+    <link rel="stylesheet" href="css/maintest.css" />
+
+    <link rel="stylesheet" href="css/person-mytiku.css">
+    <link rel="stylesheet" href="js/lib/ionic/css/ionic.min.css">
+    <script src="js/lib/ionic/js/ionic.bundle.min.js"></script>
+</head>
+<body>
+
+<ion-nav-view></ion-nav-view>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic", "ui.router"]);
+    app.directive('hideTabs', function($rootScope){
+        return {
+            restrict: 'A',
+            link: function (scope, element, attributes) {
+                scope.$on('$ionicView.beforeEnter', function () {
+                    scope.$watch(attributes.hideTabs, function (value) {
+                        $rootScope.hideTabs = value;
+                    });
+                });
+                scope.$on('$ionicView.beforeLeave', function () {
+                    $rootScope.hideTabs = false;
+                });
+            }
+        }
+    })
+    app.config(["$stateProvider", "$urlRouterProvider", "$ionicConfigProvider", function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+        // 解决android手机tabs选项卡刷新后出现在浏览器上边的问题
+        $ionicConfigProvider.platform.ios.tabs.style('standard');
+        $ionicConfigProvider.platform.ios.tabs.position('bottom');
+        $ionicConfigProvider.platform.android.tabs.style('standard');
+        $ionicConfigProvider.platform.android.tabs.position('standard');
+
+        $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+        $ionicConfigProvider.platform.android.navBar.alignTitle('left');
+
+        $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+        $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
+
+        $ionicConfigProvider.platform.ios.views.transition('ios');
+        $ionicConfigProvider.platform.android.views.transition('android');
+        /* *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * */
+        //配置访问的默认页面
+        $urlRouterProvider.otherwise("/tabs");
+
+        // 配置路由状态
+        $stateProvider
+                .state({
+                    name: "tabs",
+                    url: "/tabs",
+                    templateUrl: "template/tabs.html"
+                })
+                .state({
+                    name: "tabs.search-1",
+                    url: "/search-1",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/search-1.html",
+                            controller: ["$scope", "$ionicPopover", function ($scope, $ionicPopover) {
+
+                                $ionicPopover.fromTemplateUrl("template/part-index/search/showAear.html",
+                                        {
+                                            scope: $scope,
+                                            animate: "slide-in-up"
+                                        })
+                                        .then(function (modal) {
+                                            $scope.dialog = modal;
+                                        });
+                                $scope.showAear = function ($event) {
+                                    $scope.dialog.show($event)
+                                }
+                            }]
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.video-1",
+                    url: "/video-1",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/video-1.html",
+                            controller:["$scope", "$ionicPopover", function($scope, $ionicPopover) {
+
+                                $ionicPopover.fromTemplateUrl("template/part-index/video/showEdu.html",{
+                                    scope:$scope
+                                }).then(function(modal) {
+                                    $scope.dialog = modal;
+                                });
+
+                                $scope.showEdu = function(e) {
+                                    $scope.dialog.show(e);
+                                };
+                            }]
+                        }
+                    }
+                })
+//                宏鹏题库
+                .state({
+                    name:"tabs.ed1",
+                    url:"/ed1",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/ed1.html"
+                        }
+                    }
+                })
+                .state({
+                    name:"tabs.ed2",
+                    url:"/ed2",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/ed2.html"
+                        }
+                    }
+                })
+//                图书商城
+                .state({
+                    name:"tabs.bookstrip",
+                    url:"/bookstrip",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/list.html"
+                        }
+                    }
+                })
+                .state({
+                    name:"tabs.video-3",
+                    url:"/tabs.video-3",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/video-3.html"
+                        }
+                    }
+                })
+                .state({
+                    name:"tabs.video-4",
+                    url:"/tabs.video-4",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/video-4.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.video-2",
+                    url: "/video-2",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/video-2.html",
+                            controller: ["$scope", "$ionicPopover", function ($scope, $ionicPopover) {
+
+                                $ionicPopover.fromTemplateUrl("template/part-index/video/showFenx.html",
+                                        {
+                                            scope: $scope,
+                                            animate: "slide-in-up"
+                                        })
+                                        .then(function (modal) {
+                                            $scope.dialog = modal;
+                                        });
+                                $scope.showFenx = function ($event) {
+                                    $scope.dialog.show($event)
+                                }
+                                $scope.closeFenx=function(){
+                                    $scope.dialog.hide()
+                                }
+                            }]
+                        }
+                    }
+                })
+
+                .state({
+                    name:"tabs.order",
+                    url:"/order",
+                    views:{
+                        "search-1view":{
+                            templateUrl:"template/part-index/order.html",
+                            controller:["$scope", "$ionicModal", function($scope, $ionicModal) {
+                                $ionicModal.fromTemplateUrl(
+                                        "template/part-index/orderA/ordera.html",
+                                        {
+                                            scope:$scope,
+                                            animation:"slide-in-up"
+                                        }
+                                ).then(function(modal) {
+                                    $scope.dialog = modal;
+                                });
+                                $scope.openModal = function(){
+                                    $scope.dialog.show();
+//                                        $(".zz").css("display","block");
+                                }
+                                $scope.back = function() {
+                                    $scope.dialog.hide();
+//                                        $(".zz").css("display","none");
+                                }
+                            }]
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.orderb",
+                    url: "/order",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/orderb.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.learning",
+                    url: "/learning",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/learning.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.learninga",
+                    url: "/learninga",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/learninga.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.catalogue",
+                    url: "/catalogue",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/catalogue.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.exam",
+                    url: "/exam",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/exam.html",
+                            controller:["$scope",function($scope){
+                                $scope.items = [
+                                    {selected:true}
+                                ];
+                            }]
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.exama",
+                    url: "/exama",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/exama.html",
+                            controller:["$scope",function($scope){
+                                $scope.items = [
+                                    {selected:true}
+                                ];
+                            }]
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.result",
+                    url: "/result",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/result.html"
+                        }
+                    }
+                })
+                .state({
+                    name: "tabs.video-service",
+                    url: "/video-service",
+                    views: {
+                        "search-1view": {
+                            templateUrl: "template/part-index/video-service.html"
+                        }
+                    }
+                })
+                //                免费资料............................
+                .state({
+                    name:"tabs.main",
+                    url:"/main",
+                    views:{
+                        "mainview":{
+                            templateUrl:"template/part-money/main.html"
+                        }
+                    }
+                })
+                .state({
+                    name:"tabs.mainvideo",
+                    url:"/mainvideo",
+                    views:{
+                        "mainview":{
+                            templateUrl:"template/part-money/mainvideo.html"
+                        }
+                    }
+                })
+                .state({
+                    name:"tabs.mainstudy",
+                    url:"/mainstudy",
+                    views:{
+                        "mainview":{
+                            templateUrl:"template/part-money/mainstudy.html"
+                        }
+                    }
+                })
+
+                .state({
+                    name:"tabs.maintest",
+                    url:"/maintest",
+                    views:{
+                        "mainview":{
+                            templateUrl:"template/part-money/maintest.html"
+                        }
+                    }
+                })
+                //              免费资料
+
+                .state({
+                    name:"tabs.free",
+                    url:"/free",
+                    views:{
+                        "freeview":{
+                            templateUrl:"template/part-money/free.html"
+                        }
+                    }
+                })
+                //................................................................个人中心.....
+                .state({
+                    name: "tabs.PersonalCenter3",
+                    url: "/PersonalCenter3",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/PersonalCenter3.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //                    登录
+                .state({
+                    name:"tabs.login1",
+                    url:"/login1",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/login1.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //                    忘记密码
+                .state({
+                    name:"tabs.RetrievePassword",
+                    url:"/RetrievePassword",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/RetrievePassword.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            个人中心2
+                .state({
+                    name: "tabs.PersonalCenter1",
+                    url: "/PersonalCenter1",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/PersonalCenter1.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+
+                //            个人中心3
+                .state({
+                    name: "tabs.PersonalCenter2",
+                    url: "/PersonalCenter2",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/PersonalCenter2.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            设置1
+                .state({
+                    name: "tabs.setUp",
+                    url: "/setUp",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/setUp.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            设置2
+                .state({
+                    name: "tabs.setUp2",
+                    url: "/setUp2",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/setUp2.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            学校
+                .state({
+                    name: "tabs.School",
+                    url: "/School",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/School.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            区域
+                .state({
+                    name: "tabs.area",
+                    url: "/area",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/area.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            昵称
+                .state({
+                    name: "tabs.nickname",
+                    url: "/nickname",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/nickname.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //            个人资料2
+                .state({
+                    name: "tabs.personaldata2",
+                    url: "/personaldata2",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/personaldata2.html",
+                            controller: ["$scope", "$ionicActionSheet", function ($scope, $ionicActionSheet) {
+                                $scope.openmo = function () {
+                                    $ionicActionSheet.show({
+                                        buttons: [
+                                            {text: '拍照'},
+                                            {text: '相册'}
+                                        ],
+                                        cancelText: '取消',
+                                        buttonClicked: function (index) {
+                                            return true;
+                                        }
+                                    });
+                                };
+                                $scope.openmom = function() {
+                                    // 显示操作表
+                                    $ionicActionSheet.show({
+                                        buttons: [
+                                            { text: '是' },
+                                            { text: '否' },
+                                        ],
+                                        buttonClicked: function(index) {
+                                            return true;
+                                        }
+                                    });
+
+                                };
+                            }]
+                        }
+                    }
+                })
+                //                    注册1
+                .state({
+                    name:"tabs.regist1",
+                    url:"/regist1",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/regist1.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //                    注册2
+                .state({
+                    name:"tabs.regist2",
+                    url:"/regist2",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/regist2.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //我的题库
+                .state({
+                    name:"tabs.mytiku",
+                    url:"/mytiku",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/mytiku.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //做题记录
+                .state({
+                    name:"tabs.zuotijilu",
+                    url:"/zuotijilu",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/zuotijilu.html",
+                            controller: ["$scope","$ionicPopover",function ($scope,$ionicPopover) {
+                                $ionicPopover.fromTemplateUrl(
+                                        "template/part-person/fd/template01.html",
+                                        {
+                                            scope:$scope,
+                                            animation:"slide-in-up"
+                                        }).then(function(modal){
+                                    $scope.dialog=modal;
+                                });
+                                $scope.showjb=function(e){
+                                    $scope.dialog.show(e)
+                                };
+
+                                $scope.showqb=function(e){
+                                    $scope.dialog.show(e)
+                                }
+                            }]
+                        }
+                    }
+                })
+                //错题集
+                .state({
+                    name:"tabs.cuotiji",
+                    url:"/cuotiji",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/cuotiji.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                // 我的电子书
+                .state({
+                    name: "tabs.dianzishu",
+                    url: "/dianzishu",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/dianzishu.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                // 书籍详情
+                .state({
+                    name: "tabs.shujixiangqing",
+                    url: "/shujixiangqing",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/shujixiangqing.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                // 目录
+                .state({
+                    name: "tabs.mulu",
+                    url: "/mulu",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/mulu.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                // 电子书2
+                .state({
+                    name: "tabs.dianzishu2",
+                    url: "/dianzishu2",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/dianzishu2.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+//                                app.controller("myCtrl",function($scope,$ionicPopover,$ionicPopup){
+//                                    $ionicPopover.fromTemplateUrl(
+//                                            "template/part-person/fd/template03.html",
+//                                            {
+//                                                scope:$scope,
+//                                                animation:"slide-in-up"
+//                                            }).then(function(modal){
+//                                        $scope.dialog=modal;
+//                                    });
+//                                    $scope.showyj=function(e){
+//                                        $scope.dialog.show(e)
+//                                    };
+                            }]
+                        }
+                    }
+                })
+                //      消息中心
+                .state({
+                    name: "tabs.xiaoxizhongxin",
+                    url: "/xiaoxizhongxin",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/xiaoxizhongxin.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                //      通知消息
+                .state({
+                    name: "tabs.tongzhixiaoxi",
+                    url: "/tongzhixiaoxi",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/tongzhixiaoxi.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                //      笨笨猫
+                .state({
+                    name: "tabs.benbenmao",
+                    url: "/benbenmao",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/benbenmao.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                //      校区查询
+                .state({
+                    name: "tabs.xiaoquchaxun",
+                    url: "/xiaoquchaxun",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/xiaoquchaxun.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+                //      详细信息
+                .state({
+                    name: "tabs.xiangxixinxi",
+                    url: "/xiangxixinxi",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/xiangxixinxi.html",
+                            controller: ["$scope",function ($scope,$ionicActionSheet) {
+
+                            }]
+                        }
+                    }
+                })
+
+                //我的购物车..........................1
+                .state({
+                    name: "tabs.myshopcart-one",
+                    url: "/myshopcart-one",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/part-shopcart/myshopcart-one.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //我的订单......................02
+                .state({
+                    name: "tabs.myorderone",
+                    url: "/myorderone",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/part-shopcart/myorderone.html",
+                            controller: ["$scope","$ionicPopup",function ($scope,$ionicPopup) {
+                                $scope.deleteItem=function(index){
+                                    console.log("数据被删除了...");
+                                    $ionicPopup.show({
+                                        template:"确定要删除订单吗？",
+                                        scope:$scope,
+                                        buttons:[
+                                            {text:"取消",type:"button-dark"},
+                                            {text:"确定",type:"button-positive",onTap:function(){
+                                                console.log("确定按钮被点击了...");
+                                                $scope.goodses.splice(index,1);
+                                            }}
+                                        ]
+                                    });
+                                }
+                            }]
+                        }
+                    }
+
+                })
+                //我的订单--待收货
+                .state({
+                    name: "tabs.myorderthree",
+                    url: "/myorderthree",
+                    views: {
+                        "myview": {
+                            templateUrl: "template/part-person/part-shopcart/myorderthree.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+
+                })
+                //我的订单--待评价
+                .state({
+                    name:"tabs.comment",
+                    url:"/comment",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/comment.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+
+                })
+                //在线报班
+                .state({
+                    name:"tabs.online",
+                    url:"/online",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/online.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+
+                //在线报班-立即报班
+                .state({
+                    name:"tabs.online-3",
+                    url:"/online-3",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/online-3.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+
+                //在线报班-立即报班2
+                .state({
+                    name:"tabs.online-4",
+                    url:"/online-4",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/online-4.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+                //我的收藏
+                .state({
+                    name:"tabs.collect",
+                    url:"/collect",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/collect.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+
+                //我的收藏2
+                .state({
+                    name:"tabs.collect-2",
+                    url:"/collect-2",
+                    views:{
+                        "myview":{
+                            templateUrl: "template/part-person/part-shopcart/collect-2.html",
+                            controller: ["$scope",function ($scope) {
+
+                            }]
+                        }
+                    }
+                })
+
+
+    }]);
+</script>
+</html>

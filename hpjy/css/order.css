@@ -1,0 +1,225 @@
+.zz{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    z-index: 9;
+    display: none;
+}
+.back{
+    background-color: #f1eff8;
+}
+.bar .title.title-left{
+    text-align: center;
+}
+.img{
+    width: 1rem;
+    float: left;
+    margin-top: 1.5rem;
+}
+.span-left{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: 0.8rem;
+}
+.span-right{
+    font-size: 0.8rem;
+    float: right;
+}
+.item p.address{
+    margin-left: 0.8rem;
+    white-space: normal;
+    font-size:0.18rem;
+    width: 85%;
+    float: left;
+    margin-top: 0.3rem;
+}
+.list .item .btn-tb{
+    color:#5f5d5d;
+}
+
+.item-center{
+    width: 90%;
+    float: left;
+}
+.btn-tb{
+     min-width: 0px;
+    margin-top:0.8rem;
+    min-height: 0;
+    line-height: 0.2rem;
+}
+.line{
+    width: 100%;
+    height:0.5rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+}
+.book-img{
+    width: 3rem;
+    height: 4rem;
+    float: left;
+}
+.item h2.int{
+    margin-left: 0.8rem;
+    white-space: normal;
+    width: 78%;
+    float: left;
+}
+.item h2.int .int-font{
+    white-space: normal;
+    font-size:0.8rem;
+    margin-bottom: 1rem;
+}
+.span-left1{
+    font-size: 1rem;
+    float: left;
+}
+.span-right1{
+    float: right;
+    font-size: 1rem;
+}
+.item.gary-bg{
+    background-color: #f1eff8;
+}
+.box{
+    overflow: hidden;
+    border-bottom: 1px dashed #e4e4e4;
+    padding: 0.3rem 0;
+    background-color: #fff;
+}
+.count{
+    margin-left: 0.9rem;
+    float: left;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+.count-right{
+    float: right;
+    margin-top: 0.5rem;
+    background-color:#f6f6f6 ;
+    height: 1.2rem;
+    margin-right: 1.1rem;
+}
+.reduce,.add{
+    width: 1.3rem;
+    display: inline-block;
+    height:1.1rem;
+    background-color: #e0e0e0;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 0.8rem;
+}
+.number{
+    width: 0.8rem;
+    display: inline-block;
+    height: 1rem;
+    text-align: center;
+    font-size: 0.2rem;
+}
+.count-right1{
+    float: right;
+    margin-top: 0.5rem;
+    height: 1.2rem;
+    font-size: 0.95rem;
+    margin-right: 1.1rem;
+}
+.count-right2{
+    margin-top: 0.65rem;
+    height: 1.2rem;
+    font-size: 0.95rem;
+    margin-right: 1.1rem;
+    color: #c5c5c5;
+    padding-left: 0.8rem;
+}
+.payImg{
+    width: 1.1rem;
+}
+.item1{
+    border: 1px solid #fff;
+    margin-top: 4px;
+}
+.box .item-toggle .toggle{
+    top: 0px!important;
+}
+.item-con h2.itemtitle{
+    width: 90%;
+    float: right;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.item-con1{
+    font-size: 0.8rem;
+    position: absolute;
+    top:1.2rem;
+    color: #c5c5c5;
+}
+.payImg1,.paydh{
+    width: 1.5rem;
+    vertical-align: middle;
+}
+.paydh{
+    float: right;
+}
+.need{
+    float: left;
+}
+.mary{
+    float: right;
+}
+.list-out{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+.box1{
+    margin-top: 0.8rem;
+    background-color: #fff;
+}
+.footer1{
+    margin-top: 2rem;
+    padding: 0;
+}
+.item p.pirce{
+    width: 7rem;
+    float: left;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ff2828;
+}
+.item.item1{
+    border-style: none;
+    float: right;
+}
+#modal{
+    z-index: 999;
+}
+ion-footer-bar.check.bar{
+    padding: 0px;
+}
+ion-footer-bar.check{
+    height: 55px;
+}
+ion-footer-bar.check .row{
+    padding: 0px;
+}
+ion-footer-bar.check .col{
+    padding: 0px;
+}
+
+.check .num{
+    text-align: right;
+    line-height: 55px;
+    color: #000;
+}
+.check .num span{
+    margin: 0 10px;
+    color: #ff0000;
+}
+.check .pay{
+    line-height: 55px;
+    background: #ff6600;
+    color: #fff;
+}

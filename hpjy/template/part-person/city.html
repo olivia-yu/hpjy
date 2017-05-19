@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>城市</title>
+    <link rel="stylesheet" href="js/lib/ionic1/css/ionic.min.css">
+    <link rel="stylesheet" href="css/area_prov.css">
+    <script src="js/lib/ionic1/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+        <ion-header-bar class="bar bar-positive">
+            <button class="button button-clear "><i class="icon ion-ios-arrow-left"></i></button>
+            <h1 class="title">城市</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-divider">我的位置</ion-item>
+
+                <ion-item class="icon-left itembutton ">
+                    <i class="icon ion-ios-location"></i>
+                    河南 郑州
+                </ion-item>
+
+                <ion-item class="item-divider">全部</ion-item>
+
+                <ion-item class="itembutton itemcolor">
+                  巩义
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   郑州
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                   开封
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    洛阳
+                </ion-item>
+
+                <ion-item class=" itembutton itemcolor">
+                    新乡
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                  信阳
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    驻马店
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    安阳
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    周口
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                    登封
+                </ion-item>
+                <ion-item class=" itembutton itemcolor">
+                   焦作
+                </ion-item>
+            </ion-list>
+        </ion-content>
+</body>
+<script>
+    var app = angular.module("myApp", ["ionic"]);
+    app.controller("myCtrl", function () {
+
+    })
+</script>
+</html>

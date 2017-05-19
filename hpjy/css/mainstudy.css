@@ -1,0 +1,14 @@
+
+			.city{
+				float: left;
+				padding-top:20px;
+				
+			}
+			.study{
+				float: right;
+				padding-top:20px;
+				width :57px ;
+				height:20px;
+				background-color: #ff5000;
+				
+			}

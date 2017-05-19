@@ -1,0 +1,58 @@
+<ion-view>
+<!--页头-->
+		<ion-header-bar  class="bar-positive">
+			<button class="button button-clear" ng-click="$ionicGoBack()"><i class="icon ion-ios-arrow-left"></i></button>
+		    <h1 class="title">我的积分</h1>
+		</ion-header-bar>
+		<!--内容-->
+		<ion-content>
+			<ion-list style="height:50px;">
+				<ion-item>
+					<p class="comment">
+						<span>星级评价</span>
+						<img src="images02/start.png">
+					</p>	
+				</ion-item>	
+			</ion-list>
+			<div class="list card" id="listed">
+				说点什么吧~
+			</div>
+			<ion-list>
+				<ion-item  id="tj">
+					<button class="button button-block" id="button">提交评价</button>
+				</ion-item>
+			</ion-list>
+		</ion-content>	
+</ion-view>		
+	
+<style type="text/css">
+		.comment{
+			height:18px;
+			line-height:18px;
+		}
+		.comment span{
+			font-size: 15px;
+		}
+		.comment>img{
+			vertical-align:center;
+			width: 105px;
+		}
+		#listed{
+			height: 120px;
+			color: #ccc;
+			padding-left: 7px;
+		    padding-top: 5px;
+		    border-radius: 5px;
+		}
+		#tj{
+			border:0;
+			padding-top: 0;
+		}
+		#button{
+			color:#fff;
+			background-color: #FF9000;
+		}
+		.button.button-block, .button.button-full{
+			margin-top: 0;
+		}
+</style>	
